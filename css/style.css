@@ -52,17 +52,13 @@ header {
 
 
 .search-knap{
-    /* flex: 1;
     display: flex;
-    justify-content: flex-end;
-*/
-display: flex;
- line-height: 28px;
- align-items: center;
- position: absolute;
- right: 0;
- padding-right: 5%;
- max-width: 190px;
+    line-height: 28px;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    padding-right: 5%;
+    max-width: 190px;
 }
 
 .input {
@@ -81,20 +77,20 @@ display: flex;
     color: #9e9ea7;
    }
    
-   .input:focus, input:hover {
+.input:focus, input:hover {
     
     border-color: rgba(234,76,137,0.4);
     background-color: #fff;
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-   }
+}
    
-   .icon {
+.icon {
     position: absolute;
     left: 1rem;
-    fill: #9e9ea7;
+    fill: #24547c;
     width: 1rem;
     height: 1rem;
-   }
+}
    
 
 .navbar{
@@ -143,8 +139,8 @@ header .navbar ul li ul {
 
 header .navbar ul li ul li {
     width: 100%;
-    border-top: 2px solid rgba(0,0,0,0.1);
-    bord
+    
+    
 }
 
 header .navbar ul li:focus-within > ul,
@@ -176,7 +172,7 @@ header label {
 
     header .navbar{
         position: absolute;
-        top: 100%;
+        top: 170%;
         left:0;
         right:0;
         background:var(--primarycolor);
@@ -186,6 +182,11 @@ header label {
 
     header .navbar ul li {
         width: 100%;
+        
+    }
+
+    header .navbar ul li a{
+        color: var(--secondarycolor);
     }
 
     header .navbar ul li ul {
@@ -206,4 +207,58 @@ header label {
         display: block;
     }
 
+    .search-knap{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 5%;
+        max-width:1rem;
+    }
+    
+    .input {
+        display: none;
+        width: 100%;
+        height: 40px;
+        padding: 0 1rem;
+        padding-left: 2.5rem;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: #f3f3f4;
+        color: #0d0c22;
+        transition: .3s ease;
+        position: absolute;
+        top: 100%;
+        
+    }
+                
+    .icon {
+        position: absolute;
+        left: 0rem;
+        fill: #9e9ea7;
+        width: 2rem;
+        height: 2rem;
+        z-index: 10;
+    }
+
+    .search-toggle{
+        display: none;
+    }
+    
+    .search-icon-label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        line-height: 28px;
+        max-width: 1rem;
+    }
+
+
+
+    
+    
+
+
+
 }
+
