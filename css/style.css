@@ -19,9 +19,7 @@
     --font-primary:"utile", sans-serif;
 }
 
-body{
-    background-color: black;
-}
+
 
 
 
@@ -65,22 +63,22 @@ header {
  width: 100%;
  height: 40px;
  padding: 0 1rem;
- padding-left: 2.5rem;
+ padding-left: 1.5rem;
  border: 2px solid transparent;
  border-radius: 8px;
- background-color: #f3f3f4;
- color: #0d0c22;
+ background-color:var(--primarycolor);
+ color: black;
  transition: .3s ease;
 }
 
 .input::placeholder {
-    color: #9e9ea7;
+    color:black;
    }
    
 .input:focus, input:hover {
     
     border-color: rgba(234,76,137,0.4);
-    background-color: #fff;
+    background-color: white;
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
 }
    
@@ -159,8 +157,26 @@ header label {
     display: none;
 }
 
+.search-toggle{
+    display: none;
+}
+
+
+
+
 @media(max-width:600px){
 
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    /* Styling af navigationsbar/burgermenu */
+    .logo-img{
+        width: 25%;
+    }
+    
 
     header {
         padding: 20px;
@@ -172,7 +188,7 @@ header label {
 
     header .navbar{
         position: absolute;
-        top: 170%;
+        top: 160%;
         left:0;
         right:0;
         background:var(--primarycolor);
@@ -203,10 +219,12 @@ header label {
         left:0;
     }
 
+    /* Gør burgermenuen synlig når label/checkboxen er checked */
     #menu-bar:checked ~ .navbar {
         display: block;
     }
 
+    /* Styling af søgeknap */
     .search-knap{
         display: flex;
         align-items: center;
@@ -215,29 +233,30 @@ header label {
         max-width:1rem;
     }
     
+    /* Input er selve søgefeltet hvor man skriver det man søger på */
     .input {
         display: none;
-        width: 100%;
+        width: 8rem;
         height: 40px;
-        padding: 0 1rem;
-        padding-left: 2.5rem;
+        padding: 1rem; 
         border: 2px solid transparent;
         border-radius: 8px;
-        background-color: #f3f3f4;
-        color: #0d0c22;
+        background-color: var(--primarycolor);
+        color:black;
         transition: .3s ease;
         position: absolute;
-        top: 100%;
+        right: 100%;
         
+
     }
-                
+       
+    /* Søge iconet */
     .icon {
         position: absolute;
         left: 0rem;
         fill: #9e9ea7;
         width: 2rem;
         height: 2rem;
-        z-index: 10;
     }
 
     .search-toggle{
@@ -253,10 +272,100 @@ header label {
         max-width: 1rem;
     }
 
+    .input::placeholder {
+        color: black;
+       }
+       
+    /* Hover effekt til søgefelt */
+    .input:focus, input:hover {
+        
+        border-color: black;
+        background-color:white;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    }
+
+    /* Gør input søgefeltet vises når label er checked eller ikonen klikkes på */
+    .search-toggle:checked ~ .input{
+        display: block;
+    }
 
 
-    
-    
+    main{
+        padding-top: 6rem;
+        line-height: 1.2;
+    }
+
+    h1{
+        color: white;
+        font-family:var(--font-primary);
+        font-weight: bold;
+        font-size: xx-large;
+        
+    }
+
+    h2{
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+
+    p{
+        font-family: var(--font-primary);
+        font-weight: lighter;
+    }
+
+
+      /* Styling af Introafsnit */
+      .intro-afsnit{
+        background-image: url(/images/forside-img.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        background-repeat: no-repeat;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        
+    }    
+
+    .intro-tekst p{
+        padding-top: 4rem;
+        color: white;
+        width: 70%;
+        border: black;
+    }
+
+    /* Styling af koncert afsnit */
+    .koncert-afsnit{
+        padding-top: 2rem;
+        background-color: var(--primarycolor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .koncert-afsnit h2{
+        color: var(--secondarycolor);
+        font-size:1.4rem;
+        
+    }
+
+    .koncert-tekst{
+        padding-top: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
