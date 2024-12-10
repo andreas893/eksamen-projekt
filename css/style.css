@@ -1295,36 +1295,45 @@ header label {
         border: black;
     }
 
-    /* Styling af koncert afsnit */
-    .koncert-afsnit{
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: column;
+
+    /* Styling af kommende koncert sektio */
+    .koncert-section {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
         align-items: center;
-    }
-
-    .koncert-afsnit h2{
-        color: var(--secondarycolor);
-        font-size:1.4rem;
-        
-    }
-
-    .koncert-tekst{
-        padding-top: 1rem;
+        overflow: hidden;
+      }
+      
+      /* Styling af artikel */
+      .koncert-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
         color: var(--secondarycolor);
-    }
+        width: 90%;
+        padding-left: 2rem;
+      }
+      
+      .koncert-info h2 {
+        color: var(--secondarycolor);
+        font-size: 1.4rem;
 
-    /* Styling af koncert knap */
-    .koncert-knap{
-        padding-top: 1.5rem
-    }
-
-    .koncert-knap a{
+ 
+      }
+      
+      .koncert-info p {
+        padding-top: 1rem;
+      }
+      
+      /* styling af knap til alle koncerter */
+      .koncert-button {
+        padding-top: 1.5rem;
+      }
+      
+      .koncert-button a {
         display: inline-block;
         text-decoration: none;
         color: black;
@@ -1333,32 +1342,67 @@ header label {
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
-        border: 2px solid;
-        border-color: var(--primarycolor);
+        border: 2px solid var(--primarycolor);
         width: 170px;
         text-align: center;
         transition: all 0.3s ease;
-    }
-
-    .koncert-knap a:hover{
+      }
+      
+      .koncert-button a:hover {
         background-color: var(--primarycolor);
         color: var(--tetriarycolor);
         border-color: var(--tetriarycolor);
+      }
+      
+      /* styling af billede til afsnittet */
+      .koncert-image {
+        width: 100%;
+      }
+      
+      .figure-container{
+        text-align: center;
+        margin-right: 2rem;
+      }
 
-    }
+      
+      .koncert-image img {
+        width: 90%;
+        height: auto;
+        padding-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .koncert-heading {
+        color: var(--secondarycolor);
+        font-size: 1rem;
+        text-align: center;
 
+      }
 
-    
+      .figure-container a{
+        text-decoration: none;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+      }
 
+      .figure-container a:hover{
+        color: var(--secondarycolor);
+        -webkit-text-stroke:0.8px var(--secondarycolor) ;
+        -webkit-text-fill-color: var(--primarycolor);
+        cursor: pointer;
+      }
 
+      .koncert-image img:hover{
+        transform: scale(1.05);
+      }
 
-
-
+      
     /* Styling af kommende koncerter billeder */
     .koncerter-img{
-        padding-top: 1.5rem;
+        padding-top: 2rem;
         display: flex;
-        flex-direction: column;
         overflow: hidden;
     }
 
@@ -1380,9 +1424,9 @@ header label {
         -webkit-text-stroke: 0;
     }
 
-    .k1-overskrift{
+    /* .k1-overskrift{
         text-align: center;
-    }
+    } */
     
     .koncerter-img img{
         width: 70%;
