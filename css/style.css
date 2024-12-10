@@ -1588,6 +1588,9 @@ header label {
     /* Styling af footer */
     
     footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         background-color:var(--primarycolor);
         font-family: var(--font-primary);
         font-weight: bold;
@@ -1604,6 +1607,7 @@ header label {
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-column: 2;
     }
 
     /* Styling af oplysninger i footeren */
@@ -1612,7 +1616,8 @@ header label {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        grid-column: 1;
+        grid-row: 1;
     }
 
     .oplysninger{
@@ -1624,13 +1629,14 @@ header label {
         padding: 0.2rem;
     }
 
-    /* Styling af nyhedsbrev */
+    /* Styling af nyhedsbrev og kontakt oplysninger */
     .nyhedsbrev{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
     }
 
     .nyhedsbrev p{
@@ -1664,21 +1670,15 @@ header label {
 
 
     /* Styling af kontaktoplysninger */
-    .kontakt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-    }
+    
 
     .kontakt-tekst {
         list-style: none;
         text-align: center;
+        padding-top: 1rem;
     }
 
-    .kontakt li{
+    .kontakt-tekst li{
         padding: 0.2rem;
     }
 
