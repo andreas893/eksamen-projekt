@@ -1141,7 +1141,8 @@ header label {
     
 
     header {
-        padding: 20px;
+        margin: 0 auto;
+        position: fixed;
     }
     
     header label {
@@ -1150,7 +1151,7 @@ header label {
 
     header .navbar{
         position: absolute;
-        top: 160%;
+        top: 150%;
         left:0;
         right:0;
         background:var(--primarycolor);
@@ -1253,7 +1254,7 @@ header label {
 
 
     main{
-        padding-top: 7.5rem;
+        padding-top: 7rem;
         line-height: 1.2;
         background-color: var(--primarycolor);
     }
@@ -1262,13 +1263,14 @@ header label {
         color: white;
         font-family:var(--font-primary);
         font-weight: bold;
-        font-size: xx-large;
+        font-size: 2rem;
         
     }
 
     h2{
         font-family: var(--font-primary);
         font-weight: bold;
+        font-size: 1.6rem;
     }
 
     p{
@@ -1338,7 +1340,7 @@ header label {
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
@@ -1362,6 +1364,8 @@ header label {
       .figure-container{
         text-align: center;
         margin-right: 2rem;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
       }
 
       
@@ -1379,7 +1383,7 @@ header label {
 
       }
 
-      .figure-container a{
+      .koncert-image a{
         text-decoration: none;
         font-family: var(--font-primary);
         font-weight: bold;
@@ -1387,7 +1391,7 @@ header label {
         -webkit-text-stroke: 0;
       }
 
-      .figure-container a:hover{
+      .figure-container,.koncert-heading:hover{
         color: var(--secondarycolor);
         -webkit-text-stroke:0.8px var(--secondarycolor) ;
         -webkit-text-fill-color: var(--primarycolor);
@@ -1406,7 +1410,11 @@ header label {
         overflow: hidden;
     }
 
-    .k1-img, .k2-img, .k3-img{
+    .k2-img{
+        margin-top: 0.45rem;
+    }
+
+    .k2-img, .k3-img{
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -1415,7 +1423,7 @@ header label {
     }
 
 
-    .k1-img, .k2-img, .k3-img h3{
+    .k2-img, .k3-img h3{
         color: var(--secondarycolor);
         font-family: var(--font-primary);
         font-weight: bold;
@@ -1423,13 +1431,9 @@ header label {
         transition: all 0.3s ease;
         -webkit-text-stroke: 0;
     }
-
-    /* .k1-overskrift{
-        text-align: center;
-    } */
     
     .koncerter-img img{
-        width: 70%;
+        width: 80%;
         padding-bottom: 0.5rem;
         transition: transform 0.3s ease;
     }
@@ -1442,59 +1446,68 @@ header label {
         cursor: pointer;
     }
 
-    .k1-img, .k2-img, .k3-img, a{
+    .k2-img, .k3-img, a{
         transition: transform 0.3s ease;
     }
 
-    .k1-img, .k2-img, .k3-img, a:hover{
+    .k2-img, .k3-img, a:hover{
         transform: scale(1.05);
         
     }
 
     /* Styling af kunstner spotlight afsnit */
     .kunstner-spot img{
-        width: 60%;
+        width: 120%;
+       
     }
 
     .kunstner-img-container{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        grid-column: 1;
+        grid-row: span 2;
         padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        align-items: center;
     }
 
     .kunstner-img-container h3{
-        font-style: var(--font-primary);
+        font-family:var(--font-primary) ;
         color: var(--secondarycolor);
         font-weight: bold;
         font-size: 0.8rem;
+        text-align: center;
         padding-top: 0.5rem;
-        
     }
 
 
     .kunstner-spot{
-        display: flex;
-        flex-direction: column;
-        padding-top: 2.5rem;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        gap: 4rem ;
+        align-items: start;
+        padding: 2.5rem;
     }
 
     .kunstner-spot-tekst{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: var(--secondarycolor);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        width: 80%;
+        padding: 1rem 0 1rem 1rem;
+        width: 100%;
     }
 
     .kunstner-spot h2{
         font-family: var(--font-primary);
         font-weight: bold;
         color: var(--secondarycolor);
+        padding-bottom: 1rem;
     }
+
+   
 
 
     /* Styling af knap */
@@ -1503,7 +1516,7 @@ header label {
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
@@ -1521,13 +1534,20 @@ header label {
 
     }
 
+    .kunstner-knap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
     /* Styling af Radar værdier afsnit */
 
     .vaerdier-afsnit{
         background-image: url(/images/forside-img2.jpg);
         background-size: cover;
         background-position: center;
-        height: 200px;
+        height: 280px;
         background-repeat: no-repeat;
         border-bottom: 1.2px solid;
         
@@ -1541,18 +1561,24 @@ header label {
     }
 
     .vaerdier-tekst{
-        background-color: whitesmoke;
+        background-color: white;
         background-position: center;
+        padding: 1rem 2rem 2rem 2rem;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .vaerdier-artikel{
-        width: 80%;
+    .vaerdier-artikel, .vaerdier-artikel2{
+        width: 70%;
         padding-top: 1rem;
+        padding: 0 2rem 2rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+   
 
     .vaerdier-artikel p{
         padding-bottom: 1rem;
