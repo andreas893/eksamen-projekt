@@ -336,60 +336,113 @@ header label {
     }
 
     /* Styling af koncert afsnit */
-    .koncert-afsnit{
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: column;
+    .koncert-section {
+        padding-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
         align-items: center;
-    }
-
-    .koncert-afsnit h2{
-        color: var(--secondarycolor);
-        font-size:1.4rem;
-        
-    }
-
-    .koncert-tekst{
-        padding-top: 1rem;
+        overflow: hidden;
+      }
+      
+      /* Styling af artikel */
+      .koncert-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
         color: var(--secondarycolor);
-    }
-
-    /* Styling af koncert knap */
-    .koncert-knap{
-        padding-top: 1.5rem
-    }
-
-    .koncert-knap a{
+        width: 90%;
+        padding-left: 2rem;
+      }
+      
+      .koncert-info h2 {
+        color: var(--secondarycolor);
+        font-size: 1.4rem;
+        text-align: center;
+ 
+      }
+      
+      .koncert-info p {
+        padding-top: 1rem;
+      }
+      
+      /* styling af knap til alle koncerter */
+      .koncert-button {
+        padding-top: 1.5rem;
+      }
+      
+      .koncert-button a {
         display: inline-block;
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
-        border: 2px solid;
-        border-color: var(--primarycolor);
+        border: 2px solid var(--primarycolor);
         width: 170px;
         text-align: center;
         transition: all 0.3s ease;
-    }
-
-    .koncert-knap a:hover{
+      }
+      
+      .koncert-button a:hover {
         background-color: var(--primarycolor);
         color: var(--tetriarycolor);
         border-color: var(--tetriarycolor);
+      }
+      
+      /* styling af billede til afsnittet */
+      .koncert-image {
+        width: 100%;
+      }
+      
+      .figure-container{
+        text-align: center;
+        display: flex;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+        padding-top: 1rem;
+      }
 
-    }
+      
+      .koncert-image img {
+        width: 75%;
+        height: auto;
+        padding-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .koncert-heading {
+        color: var(--secondarycolor);
+        font-size: 1rem;
+        text-align: center;
+
+      }
+
+      .koncert-image a{
+        text-decoration: none;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+      }
+
+      .figure-container,.koncert-heading:hover{
+        color: var(--secondarycolor);
+        -webkit-text-stroke:0.8px var(--secondarycolor) ;
+        -webkit-text-fill-color: var(--primarycolor);
+        cursor: pointer;
+      }
+
+      .koncert-image img:hover{
+        transform: scale(1.05);
+      }
 
     /* Styling af kommende koncerter billeder */
     .koncerter-img{
-        padding-top: 1.5rem;
+        padding-top: 1rem;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -440,65 +493,75 @@ header label {
         
     }
 
+    
     /* Styling af kunstner spotlight afsnit */
     .kunstner-spot img{
-        width: 60%;
+        width: 80%;
+       
     }
 
     .kunstner-img-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        grid-column: 1;
+        grid-row: 3;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
     }
 
     .kunstner-img-container h3{
-        font-style: var(--font-primary);
+        font-family:var(--font-primary) ;
         color: var(--secondarycolor);
         font-weight: bold;
         font-size: 0.8rem;
+        text-align: center;
         padding-top: 0.5rem;
-        
     }
 
 
     .kunstner-spot{
-        display: flex;
-        flex-direction: column;
-        padding-top: 2.5rem;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 15rem 3rem 17rem;
+        align-items: start;
+        padding: 2rem;
+        margin-bottom: 1.7rem;
     }
 
     .kunstner-spot-tekst{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: var(--secondarycolor);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        width: 80%;
+        padding: 1rem 0 1rem 1rem;
+        width: 100%;
     }
 
     .kunstner-spot h2{
         font-family: var(--font-primary);
         font-weight: bold;
         color: var(--secondarycolor);
+        padding-bottom: 1rem;
     }
+
+   
 
 
     /* Styling af knap */
     .kunstner-knap a{
+        grid-row: 2;
         display: inline-block;
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
         border: 2px solid;
         border-color: var(--primarycolor);
-        width: 170px;
+        width: 60%;
         text-align: center;
         transition: all 0.3s ease;
     }
@@ -508,6 +571,13 @@ header label {
         color: var(--tetriarycolor);
         border-color: var(--tetriarycolor);
 
+    }
+
+    .kunstner-knap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     /* Styling af Radar værdier afsnit */
@@ -536,15 +606,14 @@ header label {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 1rem;
     }
 
-    .vaerdier-artikel{
+    .vaerdier-artikel, .vaerdier-artikel2{
         width: 80%;
         padding-top: 1rem;
-    }
-
-    .vaerdier-artikel p{
-        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -606,7 +675,7 @@ header label {
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
@@ -639,9 +708,11 @@ header label {
     .kontakt-tekst {
         list-style: none;
         text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-    .kontakt li{
+    .kontakt-tekst li{
         padding: 0.2rem;
     }
 
@@ -671,7 +742,7 @@ header label {
 
     header .navbar{
         position: absolute;
-        top: 160%;
+        top: 145%;
         left:0;
         right:0;
         background:var(--primarycolor);
@@ -774,7 +845,7 @@ header label {
 
 
     main{
-        padding-top: 6.9rem;
+        padding-top: 7.5rem;
         line-height: 1.2;
         background-color: var(--primarycolor);
     }
@@ -805,7 +876,7 @@ header label {
         background-position: center;
         height: 260px;
         background-repeat: no-repeat;
-        padding-top: 3rem;
+        padding-top: 2rem;
         padding-left: 2rem;
     }    
 
@@ -817,60 +888,113 @@ header label {
     }
 
     /* Styling af koncert afsnit */
-    .koncert-afsnit{
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: column;
+    .koncert-section {
+        padding-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
         align-items: center;
-    }
-
-    .koncert-afsnit h2{
-        color: var(--secondarycolor);
-        font-size:1.4rem;
-        
-    }
-
-    .koncert-tekst{
-        padding-top: 1rem;
+        overflow: hidden;
+      }
+      
+      /* Styling af artikel */
+      .koncert-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
         color: var(--secondarycolor);
-    }
-
-    /* Styling af koncert knap */
-    .koncert-knap{
-        padding-top: 1.5rem
-    }
-
-    .koncert-knap a{
+        width: 90%;
+        padding-left: 2rem;
+      }
+      
+      .koncert-info h2 {
+        color: var(--secondarycolor);
+        font-size: 1.4rem;
+        text-align: center;
+ 
+      }
+      
+      .koncert-info p {
+        padding-top: 1rem;
+      }
+      
+      /* styling af knap til alle koncerter */
+      .koncert-button {
+        padding-top: 1.5rem;
+      }
+      
+      .koncert-button a {
         display: inline-block;
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
-        border: 2px solid;
-        border-color: var(--primarycolor);
+        border: 2px solid var(--primarycolor);
         width: 170px;
         text-align: center;
         transition: all 0.3s ease;
-    }
-
-    .koncert-knap a:hover{
+      }
+      
+      .koncert-button a:hover {
         background-color: var(--primarycolor);
         color: var(--tetriarycolor);
         border-color: var(--tetriarycolor);
+      }
+      
+      /* styling af billede til afsnittet */
+      .koncert-image {
+        width: 100%;
+      }
+      
+      .figure-container{
+        text-align: center;
+        display: flex;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+        padding-top: 1rem;
+      }
 
-    }
+      
+      .koncert-image img {
+        width: 75%;
+        height: auto;
+        padding-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .koncert-heading {
+        color: var(--secondarycolor);
+        font-size: 1rem;
+        text-align: center;
+
+      }
+
+      .koncert-image a{
+        text-decoration: none;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+      }
+
+      .figure-container,.koncert-heading:hover{
+        color: var(--secondarycolor);
+        -webkit-text-stroke:0.8px var(--secondarycolor) ;
+        -webkit-text-fill-color: var(--primarycolor);
+        cursor: pointer;
+      }
+
+      .koncert-image img:hover{
+        transform: scale(1.05);
+      }
 
     /* Styling af kommende koncerter billeder */
     .koncerter-img{
-        padding-top: 1.5rem;
+        padding-top: 1rem;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -921,65 +1045,76 @@ header label {
         
     }
 
+    
     /* Styling af kunstner spotlight afsnit */
     .kunstner-spot img{
-        width: 60%;
+        max-width: 300px;
+        height: auto;
+        max-height: 300px;
     }
 
     .kunstner-img-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        grid-column: 1;
+        grid-row: 3;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
     }
 
     .kunstner-img-container h3{
-        font-style: var(--font-primary);
+        font-family:var(--font-primary) ;
         color: var(--secondarycolor);
         font-weight: bold;
         font-size: 0.8rem;
+        text-align: center;
         padding-top: 0.5rem;
-        
     }
 
 
     .kunstner-spot{
-        display: flex;
-        flex-direction: column;
-        padding-top: 2.5rem;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 12rem 3rem 17rem;
+        align-items: start;
+        padding: 2rem;
+        margin-bottom: 4rem;
     }
 
     .kunstner-spot-tekst{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: var(--secondarycolor);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        width: 80%;
+        padding: 1rem 0 1rem 1rem;
+        width: 100%;
     }
 
     .kunstner-spot h2{
         font-family: var(--font-primary);
         font-weight: bold;
         color: var(--secondarycolor);
+        padding-bottom: 1rem;
     }
+
+   
 
 
     /* Styling af knap */
     .kunstner-knap a{
+        grid-row: 2;
         display: inline-block;
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
         border: 2px solid;
         border-color: var(--primarycolor);
-        width: 170px;
+        width: 60%;
         text-align: center;
         transition: all 0.3s ease;
     }
@@ -991,6 +1126,13 @@ header label {
 
     }
 
+    .kunstner-knap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
     /* Styling af Radar værdier afsnit */
 
     .vaerdier-afsnit{
@@ -1000,6 +1142,7 @@ header label {
         height: 200px;
         background-repeat: no-repeat;
         border-bottom: 1.2px solid;
+        margin-top: 3rem;
         
     }
 
@@ -1017,15 +1160,14 @@ header label {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 1rem;
     }
 
-    .vaerdier-artikel{
+    .vaerdier-artikel, .vaerdier-artikel2{
         width: 80%;
         padding-top: 1rem;
-    }
-
-    .vaerdier-artikel p{
-        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -1087,7 +1229,7 @@ header label {
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
@@ -1120,12 +1262,17 @@ header label {
     .kontakt-tekst {
         list-style: none;
         text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-    .kontakt li{
+    .kontakt-tekst li{
         padding: 0.2rem;
     }
+
+
 }
+
 
 @media screen and (min-width: 768px){
     *{
