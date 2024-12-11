@@ -1,4 +1,5 @@
-@media  and (min-width:1024px) {
+@media screen and (min-width:1024px) {
+    
     *{
         box-sizing: border-box;
         margin: 0;
@@ -19,7 +20,8 @@
         --tetriarycolor:#F8E16C;
         --font-primary:"utile", sans-serif;
     }
-
+     
+    /* generel styling af header */
     header {
         position:fixed;
         background:white;
@@ -35,7 +37,7 @@
         max-height: 22%;
     }
 
-
+    /* Styling af logo */
     .logo-img{
         width: 13%;
         height: auto;
@@ -47,7 +49,7 @@
         padding-left: 1.1rem;
     }
 
-
+    /* styling af søgefelt */
     .search-knap{
         display: flex;
         line-height: 28px;
@@ -89,7 +91,7 @@
         height: 1rem;
     }
     
-
+    /* genrel styling af navigationsbaren */
     .navbar{
         position: absolute;
         left: 0;
@@ -140,11 +142,13 @@
         
     }
 
+    /* Gør submenuer folder ud når man hover over navbarens ul */
     header .navbar ul li:focus-within > ul,
     header .navbar ul li:hover > ul {
         display: block;
     }
 
+    /* fjerner ckeckbox for desktop */
     #menu-bar {
         display:none;
     }
@@ -156,11 +160,12 @@
         display: none;
     }
 
+    /* fjerner checkboxen for søgefeltet */
     .search-toggle{
         display: none;
     }
 
-
+    /* Generel styling af siden */
     main{
         padding-top: 7rem;
         line-height: 1.2;
@@ -187,5 +192,120 @@
     }
 
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Styling af footer */
+    
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color:var(--primarycolor);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        padding-top: 1rem;
+        color: var(--secondarycolor);
+    }
+    
+    /* Styling af ikoner */
+    .some-ikoner svg{
+        width: 80%;
+    }
+
+    .some-ikoner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2;
+    }
+
+    /* Styling af oplysninger i footeren */
+    .footer-oplysninger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .oplysninger{
+        list-style: none;
+        text-align: center;
+    }
+
+    .oplysninger li{
+        padding: 0.2rem;
+    }
+
+    /* Styling af nyhedsbrev og kontakt oplysninger */
+    .nyhedsbrev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .nyhedsbrev p{
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .nyhed-knap{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 170px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .nyhedsbrev a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+
+    }
+
+
+
+    /* Styling af kontaktoplysninger */
+    
+
+    .kontakt-tekst {
+        list-style: none;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .kontakt-tekst li{
+        padding: 0.2rem;
+    }
 
 }

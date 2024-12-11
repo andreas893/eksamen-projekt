@@ -22,7 +22,8 @@
         --tetriarycolor:#F8E16C;
         --font-primary:"utile", sans-serif;
     }
-
+     
+    /* generel styling af header */
     header {
         position:fixed;
         background:white;
@@ -38,7 +39,7 @@
         max-height: 22%;
     }
 
-
+    /* Styling af logo */
     .logo-img{
         width: 13%;
         height: auto;
@@ -50,7 +51,7 @@
         padding-left: 1.1rem;
     }
 
-
+    /* styling af søgefelt */
     .search-knap{
         display: flex;
         line-height: 28px;
@@ -92,7 +93,7 @@
         height: 1rem;
     }
     
-
+    /* genrel styling af navigationsbaren */
     .navbar{
         position: absolute;
         left: 0;
@@ -143,11 +144,13 @@
         
     }
 
+    /* Gør submenuer folder ud når man hover over navbarens ul */
     header .navbar ul li:focus-within > ul,
     header .navbar ul li:hover > ul {
         display: block;
     }
 
+    /* fjerner ckeckbox for desktop */
     #menu-bar {
         display:none;
     }
@@ -159,11 +162,12 @@
         display: none;
     }
 
+    /* fjerner checkboxen for søgefeltet */
     .search-toggle{
         display: none;
     }
 
-
+    /* Generel styling af siden */
     main{
         padding-top: 7rem;
         line-height: 1.2;
