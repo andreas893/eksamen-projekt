@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -161,1118 +161,7 @@ header label {
 .search-toggle{
     display: none;
 }
-
-
-
-
-    
-@media screen and (min-width: 360px) and (max-width: 500px){
-
-    *{
-        margin: 0;
-        box-sizing: border-box;
-        padding: 0;
-    }
-
-    /* Styling af navigationsbar/burgermenu */
-    .logo-img{
-        width: 25%;
-    }
-    
-
-    header {
-        padding: 20px;
-    }
-    
-    header label {
-        display: block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 160%;
-        left:0;
-        right:0;
-        background:var(--primarycolor);
-        border-top: 1px solid rgba(0,0,0,0.1);
-        display: none;
-    }
-
-    header .navbar ul li {
-        width: 100%;
-        
-    }
-
-    header .navbar ul li a{
-        color: var(--secondarycolor);
-    }
-
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
-
-    header .navbar ul li ul li {
-        background: var(--primarycolor);
-    }
-
-    header .navbar ul li ul li ul {
-        width: 100%;
-        left:0;
-    }
-
-    /* Gør burgermenuen synlig når label/checkboxen er checked */
-    #menu-bar:checked ~ .navbar {
-        display: block;
-    }
-
-    /* Styling af søgeknap */
-    .search-knap{
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding-right: 5%;
-        max-width:1rem;
-    }
-    
-    /* Input er selve søgefeltet hvor man skriver det man søger på */
-    .input {
-        display: none;
-        width: 8rem;
-        height: 40px;
-        padding: 1rem; 
-        border: 2px solid transparent;
-        border-radius: 8px;
-        background-color: var(--primarycolor);
-        color:black;
-        transition: .3s ease;
-        position: absolute;
-        right: 100%;
-        
-
-    }
-       
-    /* Søge iconet */
-    .icon {
-        position: absolute;
-        left: 0rem;
-        fill: #9e9ea7;
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .search-toggle{
-        display: none;
-    }
-    
-    .search-icon-label{
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        position: relative;
-        line-height: 28px;
-        max-width: 1rem;
-    }
-
-    .input::placeholder {
-        color: black;
-       }
-       
-    /* Hover effekt til søgefelt */
-    .input:focus, input:hover {
-        
-        border-color: black;
-        background-color:white;
-        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-    }
-
-    /* Gør input søgefeltet vises når label er checked eller ikonen klikkes på */
-    .search-toggle:checked ~ .input{
-        display: block;
-    }
-
-
-    main{
-        padding-top: 5rem;
-        line-height: 1.2;
-        background-color: var(--primarycolor);
-    }
-
-    h1{
-        color: white;
-        font-family:var(--font-primary);
-        font-weight: bold;
-        font-size: xx-large;
-        
-    }
-
-    h2{
-        font-family: var(--font-primary);
-        font-weight: bold;
-    }
-
-    p{
-        font-family: var(--font-primary);
-        font-weight: lighter;
-    }
-    
-
-      /* Styling af Introafsnit */
-      .intro-afsnit{
-        background-image: url(/images/forside-img.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 260px;
-        background-repeat: no-repeat;
-        padding-top: 2rem;
-        padding-left: 2rem;
-    }    
-
-    .intro-tekst p{
-        padding-top: 4rem;
-        color: white;
-        width: 70%;
-        border: black;
-    }
-
-    /* Styling af koncert afsnit */
-    .koncert-section {
-        padding-top: 2.5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
-        align-items: center;
-        overflow: hidden;
-      }
-      
-      /* Styling af artikel */
-      .koncert-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: var(--secondarycolor);
-        width: 90%;
-        padding-left: 2rem;
-      }
-      
-      .koncert-info h2 {
-        color: var(--secondarycolor);
-        font-size: 1.4rem;
-        text-align: center;
- 
-      }
-      
-      .koncert-info p {
-        padding-top: 1rem;
-      }
-      
-      /* styling af knap til alle koncerter */
-      .koncert-button {
-        padding-top: 1.5rem;
-      }
-      
-      .koncert-button a {
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-family: var(--font-primary);
-        font-weight: bold;
-        background-color: var(--tetriarycolor);
-        padding: 0.5rem;
-        border-radius: 5px;
-        border: 2px solid var(--primarycolor);
-        width: 170px;
-        text-align: center;
-        transition: all 0.3s ease;
-      }
-      
-      .koncert-button a:hover {
-        background-color: var(--primarycolor);
-        color: var(--tetriarycolor);
-        border-color: var(--tetriarycolor);
-      }
-      
-      /* styling af billede til afsnittet */
-      .koncert-image {
-        width: 100%;
-      }
-      
-      .figure-container{
-        text-align: center;
-        display: flex;
-        transition: all 0.3s ease;
-        -webkit-text-stroke: 0;
-        padding-top: 1rem;
-      }
-
-      
-      .koncert-image img {
-        width: 75%;
-        height: auto;
-        padding-bottom: 0.5rem;
-        transition: transform 0.3s ease;
-      }
-      
-      .koncert-heading {
-        color: var(--secondarycolor);
-        font-size: 1rem;
-        text-align: center;
-
-      }
-
-      .koncert-image a{
-        text-decoration: none;
-        font-family: var(--font-primary);
-        font-weight: bold;
-        transition: all 0.3s ease;
-        -webkit-text-stroke: 0;
-      }
-
-      .figure-container,.koncert-heading:hover{
-        color: var(--secondarycolor);
-        -webkit-text-stroke:0.8px var(--secondarycolor) ;
-        -webkit-text-fill-color: var(--primarycolor);
-        cursor: pointer;
-      }
-
-      .koncert-image img:hover{
-        transform: scale(1.05);
-      }
-
-    /* Styling af kommende koncerter billeder */
-    .koncerter-img{
-        padding-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .k1-img, .k2-img, .k3-img{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-    }
-
-
-    .k1-img, .k2-img, .k3-img h3{
-        color: var(--secondarycolor);
-        font-family: var(--font-primary);
-        font-weight: bold;
-        font-size: 1rem;
-        transition: all 0.3s ease;
-        -webkit-text-stroke: 0;
-    }
-
-    .k1-overskrift{
-        text-align: center;
-    }
-    
-    .koncerter-img img{
-        width: 70%;
-        padding-bottom: 0.5rem;
-        transition: transform 0.3s ease;
-    }
-
-    /* hovereffekt til kunstner titler */
-    aside h3:hover{
-        color: var(--secondarycolor);
-        -webkit-text-stroke:0.8px var(--secondarycolor) ;
-        -webkit-text-fill-color: var(--primarycolor);
-        cursor: pointer;
-    }
-
-    .k1-img, .k2-img, .k3-img, a{
-        transition: transform 0.3s ease;
-    }
-
-    .k1-img, .k2-img, .k3-img, a:hover{
-        transform: scale(1.05);
-        
-    }
-
-    
-    /* Styling af kunstner spotlight afsnit */
-    .kunstner-spot img{
-        width: 80%;
-       
-    }
-
-    .kunstner-img-container{
-        grid-column: 1;
-        grid-row: 3;
-        padding-top: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-    }
-
-    .kunstner-img-container h3{
-        font-family:var(--font-primary) ;
-        color: var(--secondarycolor);
-        font-weight: bold;
-        font-size: 0.8rem;
-        text-align: center;
-        padding-top: 0.5rem;
-    }
-
-
-    .kunstner-spot{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 15rem 3rem 17rem;
-        align-items: start;
-        padding: 2rem;
-        margin-bottom: 1.7rem;
-    }
-
-    .kunstner-spot-tekst{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: var(--secondarycolor);
-        padding: 1rem 0 1rem 1rem;
-        width: 100%;
-    }
-
-    .kunstner-spot h2{
-        font-family: var(--font-primary);
-        font-weight: bold;
-        color: var(--secondarycolor);
-        padding-bottom: 1rem;
-    }
-
-   
-
-
-    /* Styling af knap */
-    .kunstner-knap a{
-        grid-row: 2;
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-family: var(--font-primary);
-        font-weight: bold;
-        background-color: var(--tetriarycolor);
-        padding: 0.5rem;
-        border-radius: 5px;
-        border: 2px solid;
-        border-color: var(--primarycolor);
-        width: 60%;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-
-    .kunstner-knap a:hover{
-        background-color: var(--primarycolor);
-        color: var(--tetriarycolor);
-        border-color: var(--tetriarycolor);
-
-    }
-
-    .kunstner-knap{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    /* Styling af Radar værdier afsnit */
-
-    .vaerdier-afsnit{
-        background-image: url(/images/forside-img2.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 200px;
-        background-repeat: no-repeat;
-        border-bottom: 1.2px solid;
-        
-    }
-
-    .vaerdier-afsnit h2{
-        color: white;
-        font-weight: bold;
-        padding-top: 5rem;
-        padding-left: 1.5rem;
-    }
-
-    .vaerdier-tekst{
-        background-color: whitesmoke;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 1rem;
-    }
-
-    .vaerdier-artikel, .vaerdier-artikel2{
-        width: 80%;
-        padding-top: 1rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    /* Styling af footer */
-    
-    footer{
-        background-color:var(--primarycolor);
-        font-family: var(--font-primary);
-        font-weight: bold;
-        padding-top: 1rem;
-        color: var(--secondarycolor);
-    }
-    
-    /* Styling af ikoner */
-    .some-ikoner svg{
-        width: 80%;
-    }
-
-    .some-ikoner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Styling af oplysninger i footeren */
-    .footer-oplysninger{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .oplysninger{
-        list-style: none;
-        text-align: center;
-    }
-
-    .oplysninger li{
-        padding: 0.2rem;
-    }
-
-    /* Styling af nyhedsbrev */
-    .nyhedsbrev{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-    }
-
-    .nyhedsbrev p{
-        padding-bottom: 0.5rem;
-        font-weight: bold;
-    }
-
-    .nyhed-knap{
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-family: var(--font-primary);
-        font-weight: bold;
-        background-color: var(--tetriarycolor);
-        padding: 0.5rem;
-        border-radius: 5px;
-        border: 2px solid;
-        border-color: var(--primarycolor);
-        width: 170px;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-
-    .kunstner-knap a:hover{
-        background-color: var(--primarycolor);
-        color: var(--tetriarycolor);
-        border-color: var(--tetriarycolor);
-
-    }
-
-
-
-    /* Styling af kontaktoplysninger */
-    .kontakt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-    }
-
-    .kontakt-tekst {
-        list-style: none;
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .kontakt-tekst li{
-        padding: 0.2rem;
-    }
-
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 768px){
-    *{
-        margin: 0;
-        box-sizing: border-box;
-        padding: 0;
-    }
-
-    /* Styling af navigationsbar/burgermenu */
-    .logo-img{
-        width: 25%;
-    }
-    
-
-    header {
-        padding: 20px;
-    }
-    
-    header label {
-        display: block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 145%;
-        left:0;
-        right:0;
-        background:var(--primarycolor);
-        border-top: 1px solid rgba(0,0,0,0.1);
-        display: none;
-    }
-
-    header .navbar ul li {
-        width: 100%;
-        
-    }
-
-    header .navbar ul li a{
-        color: var(--secondarycolor);
-    }
-
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
-
-    header .navbar ul li ul li {
-        background: var(--primarycolor);
-    }
-
-    header .navbar ul li ul li ul {
-        width: 100%;
-        left:0;
-    }
-
-    /* Gør burgermenuen synlig når label/checkboxen er checked */
-    #menu-bar:checked ~ .navbar {
-        display: block;
-    }
-
-    /* Styling af søgeknap */
-    .search-knap{
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding-right: 5%;
-        max-width:1rem;
-    }
-    
-    /* Input er selve søgefeltet hvor man skriver det man søger på */
-    .input {
-        display: none;
-        width: 8rem;
-        height: 40px;
-        padding: 1rem; 
-        border: 2px solid transparent;
-        border-radius: 8px;
-        background-color: var(--primarycolor);
-        color:black;
-        transition: .3s ease;
-        position: absolute;
-        right: 100%;
-        
-
-    }
-       
-    /* Søge iconet */
-    .icon {
-        position: absolute;
-        left: 0rem;
-        fill: #9e9ea7;
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .search-toggle{
-        display: none;
-    }
-    
-    .search-icon-label{
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        position: relative;
-        line-height: 28px;
-        max-width: 1rem;
-    }
-
-    .input::placeholder {
-        color: black;
-       }
-       
-    /* Hover effekt til søgefelt */
-    .input:focus, input:hover {
-        
-        border-color: black;
-        background-color:white;
-        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-    }
-
-    /* Gør input søgefeltet vises når label er checked eller ikonen klikkes på */
-    .search-toggle:checked ~ .input{
-        display: block;
-    }
-
-
-    main{
-        padding-top: 7.5rem;
-        line-height: 1.2;
-        background-color: var(--primarycolor);
-    }
-
-    h1{
-        color: white;
-        font-family:var(--font-primary);
-        font-weight: bold;
-        font-size: xx-large;
-        
-    }
-
-    h2{
-        font-family: var(--font-primary);
-        font-weight: bold;
-    }
-
-    p{
-        font-family: var(--font-primary);
-        font-weight: lighter;
-    }
-    
-
-      /* Styling af Introafsnit */
-      .intro-afsnit{
-        background-image: url(/images/forside-img.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 260px;
-        background-repeat: no-repeat;
-        padding-top: 2rem;
-        padding-left: 2rem;
-    }    
-
-    .intro-tekst p{
-        padding-top: 4rem;
-        color: white;
-        width: 70%;
-        border: black;
-    }
-
-    /* Styling af koncert afsnit */
-    .koncert-section {
-        padding-top: 2.5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
-        align-items: center;
-        overflow: hidden;
-      }
-      
-      /* Styling af artikel */
-      .koncert-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: var(--secondarycolor);
-        width: 90%;
-        padding-left: 2rem;
-      }
-      
-      .koncert-info h2 {
-        color: var(--secondarycolor);
-        font-size: 1.4rem;
-        text-align: center;
- 
-      }
-      
-      .koncert-info p {
-        padding-top: 1rem;
-      }
-      
-      /* styling af knap til alle koncerter */
-      .koncert-button {
-        padding-top: 1.5rem;
-      }
-      
-      .koncert-button a {
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-family: var(--font-primary);
-        font-weight: bold;
-        background-color: var(--tetriarycolor);
-        padding: 0.5rem;
-        border-radius: 5px;
-        border: 2px solid var(--primarycolor);
-        width: 170px;
-        text-align: center;
-        transition: all 0.3s ease;
-      }
-      
-      .koncert-button a:hover {
-        background-color: var(--primarycolor);
-        color: var(--tetriarycolor);
-        border-color: var(--tetriarycolor);
-      }
-      
-      /* styling af billede til afsnittet */
-      .koncert-image {
-        width: 100%;
-      }
-      
-      .figure-container{
-        text-align: center;
-        display: flex;
-        transition: all 0.3s ease;
-        -webkit-text-stroke: 0;
-        padding-top: 1rem;
-      }
-
-      
-      .koncert-image img {
-        width: 75%;
-        height: auto;
-        padding-bottom: 0.5rem;
-        transition: transform 0.3s ease;
-      }
-      
-      .koncert-heading {
-        color: var(--secondarycolor);
-        font-size: 1rem;
-        text-align: center;
-
-      }
-
-      .koncert-image a{
-        text-decoration: none;
-        font-family: var(--font-primary);
-        font-weight: bold;
-        transition: all 0.3s ease;
-        -webkit-text-stroke: 0;
-      }
-
-      .figure-container,.koncert-heading:hover{
-        color: var(--secondarycolor);
-        -webkit-text-stroke:0.8px var(--secondarycolor) ;
-        -webkit-text-fill-color: var(--primarycolor);
-        cursor: pointer;
-      }
-
-      .koncert-image img:hover{
-        transform: scale(1.05);
-      }
-
-    /* Styling af kommende koncerter billeder */
-    .koncerter-img{
-        padding-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .k1-img, .k2-img, .k3-img{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-    }
-
-
-    .k1-img, .k2-img, .k3-img h3{
-        color: var(--secondarycolor);
-        font-family: var(--font-primary);
-        font-weight: bold;
-        font-size: 1rem;
-        transition: all 0.3s ease;
-        -webkit-text-stroke: 0;
-    }
-
-    .k1-overskrift{
-        text-align: center;
-    }
-    
-    .koncerter-img img{
-        width: 70%;
-        padding-bottom: 0.5rem;
-        transition: transform 0.3s ease;
-    }
-
-    /* hovereffekt til kunstner titler */
-    aside h3:hover{
-        color: var(--secondarycolor);
-        -webkit-text-stroke:0.8px var(--secondarycolor) ;
-        -webkit-text-fill-color: var(--primarycolor);
-        cursor: pointer;
-    }
-
-    .k1-img, .k2-img, .k3-img, a{
-        transition: transform 0.3s ease;
-    }
-
-    .k1-img, .k2-img, .k3-img, a:hover{
-        transform: scale(1.05);
-        
-    }
-
-    
-    /* Styling af kunstner spotlight afsnit */
-    .kunstner-spot img{
-        max-width: 300px;
-        height: auto;
-        max-height: 300px;
-    }
-
-    .kunstner-img-container{
-        grid-column: 1;
-        grid-row: 3;
-        padding-top: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-    }
-
-    .kunstner-img-container h3{
-        font-family:var(--font-primary) ;
-        color: var(--secondarycolor);
-        font-weight: bold;
-        font-size: 0.8rem;
-        text-align: center;
-        padding-top: 0.5rem;
-    }
-
-
-    .kunstner-spot{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 12rem 3rem 17rem;
-        align-items: start;
-        padding: 2rem;
-        margin-bottom: 4rem;
-    }
-
-    .kunstner-spot-tekst{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: var(--secondarycolor);
-        padding: 1rem 0 1rem 1rem;
-        width: 100%;
-    }
-
-    .kunstner-spot h2{
-        font-family: var(--font-primary);
-        font-weight: bold;
-        color: var(--secondarycolor);
-        padding-bottom: 1rem;
-    }
-
-   
-
-
-    /* Styling af knap */
-    .kunstner-knap a{
-        grid-row: 2;
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-family: var(--font-primary);
-        font-weight: bold;
-        background-color: var(--tetriarycolor);
-        padding: 0.5rem;
-        border-radius: 5px;
-        border: 2px solid;
-        border-color: var(--primarycolor);
-        width: 60%;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-
-    .kunstner-knap a:hover{
-        background-color: var(--primarycolor);
-        color: var(--tetriarycolor);
-        border-color: var(--tetriarycolor);
-
-    }
-
-    .kunstner-knap{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    /* Styling af Radar værdier afsnit */
-
-    .vaerdier-afsnit{
-        background-image: url(/images/forside-img2.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 200px;
-        background-repeat: no-repeat;
-        border-bottom: 1.2px solid;
-        margin-top: 3rem;
-        
-    }
-
-    .vaerdier-afsnit h2{
-        color: white;
-        font-weight: bold;
-        padding-top: 5rem;
-        padding-left: 1.5rem;
-    }
-
-    .vaerdier-tekst{
-        background-color: whitesmoke;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 1rem;
-    }
-
-    .vaerdier-artikel, .vaerdier-artikel2{
-        width: 80%;
-        padding-top: 1rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    /* Styling af footer */
-    
-    footer{
-        background-color:var(--primarycolor);
-        font-family: var(--font-primary);
-        font-weight: bold;
-        padding-top: 1rem;
-        color: var(--secondarycolor);
-    }
-    
-    /* Styling af ikoner */
-    .some-ikoner svg{
-        width: 80%;
-    }
-
-    .some-ikoner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Styling af oplysninger i footeren */
-    .footer-oplysninger{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .oplysninger{
-        list-style: none;
-        text-align: center;
-    }
-
-    .oplysninger li{
-        padding: 0.2rem;
-    }
-
-    /* Styling af nyhedsbrev */
-    .nyhedsbrev{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-    }
-
-    .nyhedsbrev p{
-        padding-bottom: 0.5rem;
-        font-weight: bold;
-    }
-
-    .nyhed-knap{
-        display: inline-block;
-        text-decoration: none;
-        color: black;
-        font-family: var(--font-primary);
-        font-weight: bold;
-        background-color: var(--tetriarycolor);
-        padding: 0.5rem;
-        border-radius: 5px;
-        border: 2px solid;
-        border-color: var(--primarycolor);
-        width: 170px;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-
-    .kunstner-knap a:hover{
-        background-color: var(--primarycolor);
-        color: var(--tetriarycolor);
-        border-color: var(--tetriarycolor);
-
-    }
-
-
-
-    /* Styling af kontaktoplysninger */
-    .kontakt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-    }
-
-    .kontakt-tekst {
-        list-style: none;
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .kontakt-tekst li{
-        padding: 0.2rem;
-    }
-
-
-}
-
+ */
 
 @media screen and (min-width: 768px){
     *{
@@ -1281,15 +170,46 @@ header label {
         padding: 0;
     }
 
+    @font-face {
+        font-family: "utile", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        src: url(https://use.typekit.net/xik4fpi.css);
+    }
+    
+    
+    :root{
+        --primarycolor:#24547C;
+        --secondarycolor:#6FFF39;
+        --tetriarycolor:#F8E16C;
+        --font-primary:"utile", sans-serif;
+    }
+
     /* Styling af navigationsbar/burgermenu */
     .logo-img{
         width: 18%;
     }
     
+    .forside-logo a{
+        display: flex;
+        justify-content: center;
+        padding-left: 1.1rem;
+    }
 
     header {
         margin: 0 auto;
         position: fixed;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 1rem 5% 1rem 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        border-bottom: 1.2px solid;
+        height: 23%;
     }
     
     header label {
@@ -1298,30 +218,51 @@ header label {
 
     header .navbar{
         position: absolute;
-        top: 150%;
+        top: 100%;
         left:0;
         right:0;
         background:var(--primarycolor);
         border-top: 1px solid rgba(0,0,0,0.1);
         display: none;
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+
+    header .navbar ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 165px;
+    }
+
+    header .navbar li{
+        position: absolute;
     }
 
     header .navbar ul li {
-        width: 100%;
-        
+        width: 110%;
+        position: relative;
     }
 
     header .navbar ul li a{
         color: var(--secondarycolor);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 10px;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        display: block;
     }
 
     header .navbar ul li ul {
-        position: relative;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        display: none;
         width: 100%;
     }
 
     header .navbar ul li ul li {
-        background: var(--primarycolor);
+        width: 100%;
     }
 
     header .navbar ul li ul li ul {
@@ -1329,9 +270,19 @@ header label {
         left:0;
     }
 
+    header .navbar ul li:focus-within > ul,
+    header .navbar ul li:hover > ul {
+    display: block;
+}
+    
+
     /* Gør burgermenuen synlig når label/checkboxen er checked */
     #menu-bar:checked ~ .navbar {
         display: block;
+    }
+
+    #menu-bar{
+        display: none;
     }
 
     /* Styling af søgeknap */
@@ -1604,7 +555,7 @@ header label {
 
     /* Styling af kunstner spotlight afsnit */
     .kunstner-spot img{
-        width: 120%;
+        width: 80%;
        
     }
 
@@ -1612,10 +563,10 @@ header label {
         display: flex;
         flex-direction: column;
         grid-column: 1;
-        grid-row: span 2;
+        grid-row:1/3;
         padding-top: 1.5rem;
-        padding-left: 2rem;
         align-items: center;
+        text-align: center;
     }
 
     .kunstner-img-container h3{
@@ -1630,9 +581,9 @@ header label {
 
     .kunstner-spot{
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto auto;
-        gap: 4rem ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0 4rem 0 0;
         align-items: start;
         padding: 2.5rem;
     }
@@ -1645,6 +596,9 @@ header label {
         color: var(--secondarycolor);
         padding: 1rem 0 1rem 1rem;
         width: 100%;
+        height: 230px;
+        grid-column: 2;
+        grid-row: 1;
     }
 
     .kunstner-spot h2{
@@ -1669,7 +623,7 @@ header label {
         border-radius: 5px;
         border: 2px solid;
         border-color: var(--primarycolor);
-        width: 170px;
+        width: 200px;
         text-align: center;
         transition: all 0.3s ease;
     }
@@ -1685,7 +639,8 @@ header label {
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        grid-column: 2;
+        grid-row: 2 ;
     }
 
     /* Styling af Radar værdier afsnit */
@@ -1796,7 +751,7 @@ header label {
         text-decoration: none;
         color: black;
         font-family: var(--font-primary);
-        font-weight: lighter;
+        font-weight: bold;
         background-color: var(--tetriarycolor);
         padding: 0.5rem;
         border-radius: 5px;
@@ -1834,3 +789,1249 @@ header label {
 
         
 }
+
+
+
+
+@media screen and (min-width: 500px) and (max-width: 768px){
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    @font-face {
+        font-family: "utile", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        src: url(https://use.typekit.net/xik4fpi.css);
+    }
+    
+    
+    :root{
+        --primarycolor:#24547C;
+        --secondarycolor:#6FFF39;
+        --tetriarycolor:#F8E16C;
+        --font-primary:"utile", sans-serif;
+    }
+
+    /* Styling af navigationsbar/burgermenu */
+    .logo-img{
+        width: 25%;
+    }
+    
+    .forside-logo a{
+        display: flex;
+        justify-content: center;
+        padding-left: 1.1rem;
+    }
+
+    header {
+        margin: 0 auto;
+        position: fixed;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 1rem 5% 1rem 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        border-bottom: 1.2px solid;
+        height: 22%;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background:var(--primarycolor);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+
+    header .navbar ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 165px;
+    }
+
+    header .navbar li{
+        position: absolute;
+    }
+
+    header .navbar ul li {
+        width: 110%;
+        position: relative;
+    }
+
+    header .navbar ul li a{
+        color: var(--secondarycolor);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 10px;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        display: block;
+    }
+
+    header .navbar ul li ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        display: none;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    header .navbar ul li:focus-within > ul,
+    header .navbar ul li:hover > ul {
+    display: block;
+}
+    
+
+    /* Gør burgermenuen synlig når label/checkboxen er checked */
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+    #menu-bar{
+        display: none;
+    }
+
+    /* Styling af søgeknap */
+    .search-knap{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 5%;
+        max-width:1rem;
+    }
+    
+    /* Input er selve søgefeltet hvor man skriver det man søger på */
+    .input {
+        display: none;
+        width: 8rem;
+        height: 40px;
+        padding: 1rem; 
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: var(--primarycolor);
+        color:black;
+        transition: .3s ease;
+        position: absolute;
+        right: 100%;
+        
+
+    }
+       
+    /* Søge iconet */
+    .icon {
+        position: absolute;
+        left: 0rem;
+        fill: #9e9ea7;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .search-toggle{
+        display: none;
+    }
+    
+    .search-icon-label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        line-height: 28px;
+        max-width: 1rem;
+    }
+
+    .input::placeholder {
+        color: black;
+       }
+       
+    /* Hover effekt til søgefelt */
+    .input:focus, input:hover {
+        
+        border-color: black;
+        background-color:white;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    }
+
+    /* Gør input søgefeltet vises når label er checked eller ikonen klikkes på */
+    .search-toggle:checked ~ .input{
+        display: block;
+    }
+
+
+    main{
+        padding-top: 6.2rem;
+        line-height: 1.2;
+        background-color: var(--primarycolor);
+    }
+
+    h1{
+        color: white;
+        font-family:var(--font-primary);
+        font-weight: bold;
+        font-size: xx-large;
+        
+    }
+
+    h2{
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+
+    p{
+        font-family: var(--font-primary);
+        font-weight: lighter;
+    }
+    
+
+      /* Styling af Introafsnit */
+      .intro-afsnit{
+        background-image: url(/images/forside-img.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        background-repeat: no-repeat;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }    
+
+    .intro-tekst p{
+        padding-top: 4rem;
+        color: white;
+        width: 70%;
+        border: black;
+    }
+
+    /* Styling af koncert afsnit */
+    .koncert-section {
+        padding-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        align-items: center;
+        overflow: hidden;
+      }
+      
+      /* Styling af artikel */
+      .koncert-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--secondarycolor);
+        width: 90%;
+        padding-left: 2rem;
+      }
+      
+      .koncert-info h2 {
+        color: var(--secondarycolor);
+        font-size: 1.4rem;
+        text-align: center;
+ 
+      }
+      
+      .koncert-info p {
+        padding-top: 1rem;
+      }
+      
+      /* styling af knap til alle koncerter */
+      .koncert-button {
+        padding-top: 1.5rem;
+      }
+      
+      .koncert-button a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid var(--primarycolor);
+        width: 170px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+      
+      .koncert-button a:hover {
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+      }
+      
+      /* styling af billede til afsnittet */
+      .koncert-image {
+        width: 100%;
+      }
+      
+      .figure-container{
+        text-align: center;
+        display: flex;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+        padding-top: 1rem;
+      }
+
+      
+      .koncert-image img {
+        width: 75%;
+        height: auto;
+        padding-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .koncert-heading {
+        color: var(--secondarycolor);
+        font-size: 1rem;
+        text-align: center;
+
+      }
+
+      .koncert-image a{
+        text-decoration: none;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+      }
+
+      .figure-container,.koncert-heading:hover{
+        color: var(--secondarycolor);
+        -webkit-text-stroke:0.8px var(--secondarycolor) ;
+        -webkit-text-fill-color: var(--primarycolor);
+        cursor: pointer;
+      }
+
+      .koncert-image img:hover{
+        transform: scale(1.05);
+      }
+
+    /* Styling af kommende koncerter billeder */
+    .koncerter-img{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .k1-img, .k2-img, .k3-img{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+    .k1-img, .k2-img, .k3-img h3{
+        color: var(--secondarycolor);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+    }
+
+    .k1-overskrift{
+        text-align: center;
+    }
+    
+    .koncerter-img img{
+        width: 70%;
+        padding-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    /* hovereffekt til kunstner titler */
+    aside h3:hover{
+        color: var(--secondarycolor);
+        -webkit-text-stroke:0.8px var(--secondarycolor) ;
+        -webkit-text-fill-color: var(--primarycolor);
+        cursor: pointer;
+    }
+
+    .k1-img, .k2-img, .k3-img, a{
+        transition: transform 0.3s ease;
+    }
+
+    .k1-img, .k2-img, .k3-img, a:hover{
+        transform: scale(1.05);
+        
+    }
+
+    
+    /* Styling af kunstner spotlight afsnit */
+    .kunstner-spot img{
+        height: 50%;
+        width: 50%;
+    }
+
+    .kunstner-img-container{
+        grid-column: 1;
+        grid-row: 3;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .kunstner-img-container h3{
+        font-family:var(--font-primary) ;
+        color: var(--secondarycolor);
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+
+
+    .kunstner-spot{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 12rem 3rem 17rem;
+        align-items: start;
+        padding: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .kunstner-spot-tekst{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondarycolor);
+        padding: 1rem 0 1rem 1rem;
+        width: 100%;
+    }
+
+    .kunstner-spot h2{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        color: var(--secondarycolor);
+        padding-bottom: 1rem;
+    }
+
+   
+
+
+    /* Styling af knap */
+    .kunstner-knap a{
+        grid-row: 2;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 60%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .kunstner-knap a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+
+    }
+
+    .kunstner-knap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    /* Styling af Radar værdier afsnit */
+
+    .vaerdier-afsnit{
+        background-image: url(/images/forside-img2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        background-repeat: no-repeat;
+        border-bottom: 1.2px solid;
+        margin-top: 3rem;
+        
+    }
+
+    .vaerdier-afsnit h2{
+        color: white;
+        font-weight: bold;
+        padding-top: 5rem;
+        padding-left: 1.5rem;
+    }
+
+    .vaerdier-tekst{
+        background-color: whitesmoke;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .vaerdier-artikel, .vaerdier-artikel2{
+        width: 80%;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* Styling af footer */
+    
+    footer{
+        background-color:var(--primarycolor);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        padding-top: 1rem;
+        color: var(--secondarycolor);
+    }
+    
+    /* Styling af ikoner */
+    .some-ikoner svg{
+        width: 80%;
+    }
+
+    .some-ikoner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styling af oplysninger i footeren */
+    .footer-oplysninger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .oplysninger{
+        list-style: none;
+        text-align: center;
+    }
+
+    .oplysninger li{
+        padding: 0.2rem;
+    }
+
+    /* Styling af nyhedsbrev */
+    .nyhedsbrev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .nyhedsbrev p{
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .nyhed-knap{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 170px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .kunstner-knap a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+
+    }
+
+
+
+    /* Styling af kontaktoplysninger */
+    .kontakt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .kontakt-tekst {
+        list-style: none;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .kontakt-tekst li{
+        padding: 0.2rem;
+    }
+
+
+}
+
+
+
+    
+@media screen and (min-width: 360px) and (max-width: 500px){
+
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    @font-face {
+        font-family: "utile", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        src: url(https://use.typekit.net/xik4fpi.css);
+    }
+    
+    
+    :root{
+        --primarycolor:#24547C;
+        --secondarycolor:#6FFF39;
+        --tetriarycolor:#F8E16C;
+        --font-primary:"utile", sans-serif;
+    }
+
+
+    /* Styling af navigationsbar/burgermenu */
+    .logo-img{
+        width: 35%;
+    }
+    
+    .forside-logo a{
+        display: flex;
+        justify-content: center;
+        padding-left: 1.1rem;
+    }
+
+    header {
+        margin: 0 auto;
+        position: fixed;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 1rem 5% 1rem 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        border-bottom: 1.2px solid;
+        height: 20%;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background:var(--primarycolor);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+
+    header .navbar ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 165px;
+    }
+
+    header .navbar li{
+        position: absolute;
+    }
+
+    header .navbar ul li {
+        width: 110%;
+        position: relative;
+    }
+
+    header .navbar ul li a{
+        color: var(--secondarycolor);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 10px;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        display: block;
+    }
+
+    header .navbar ul li ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        display: none;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    header .navbar ul li:focus-within > ul,
+    header .navbar ul li:hover > ul {
+    display: block;
+}
+    
+
+    /* Gør burgermenuen synlig når label/checkboxen er checked */
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+    #menu-bar{
+        display: none;
+    }
+
+    /* Styling af søgeknap */
+    .search-knap{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 5%;
+        max-width:1rem;
+    }
+    
+    /* Input er selve søgefeltet hvor man skriver det man søger på */
+    .input {
+        display: none;
+        width: 8rem;
+        height: 40px;
+        padding: 1rem; 
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: var(--primarycolor);
+        color:black;
+        transition: .3s ease;
+        position: absolute;
+        right: 100%;
+        
+
+    }
+       
+    /* Søge iconet */
+    .icon {
+        position: absolute;
+        left: 0rem;
+        fill: #9e9ea7;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .search-toggle{
+        display: none;
+    }
+    
+    .search-icon-label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        line-height: 28px;
+        max-width: 1rem;
+    }
+
+    .input::placeholder {
+        color: black;
+       }
+       
+    /* Hover effekt til søgefelt */
+    .input:focus, input:hover {
+        
+        border-color: black;
+        background-color:white;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    }
+
+    /* Gør input søgefeltet vises når label er checked eller ikonen klikkes på */
+    .search-toggle:checked ~ .input{
+        display: block;
+    }
+
+
+    main{
+        padding-top: 5rem;
+        line-height: 1.2;
+        background-color: var(--primarycolor);
+    }
+
+    h1{
+        color: white;
+        font-family:var(--font-primary);
+        font-weight: bold;
+        font-size: xx-large;
+        
+    }
+
+    h2{
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+
+    p{
+        font-family: var(--font-primary);
+        font-weight: lighter;
+    }
+    
+
+      /* Styling af Introafsnit */
+      .intro-afsnit{
+        background-image: url(/images/forside-img.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        background-repeat: no-repeat;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }    
+
+    .intro-tekst p{
+        padding-top: 4rem;
+        color: white;
+        width: 70%;
+        border: black;
+    }
+
+    /* Styling af koncert afsnit */
+    .koncert-section {
+        padding-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        align-items: center;
+        overflow: hidden;
+      }
+      
+      /* Styling af artikel */
+      .koncert-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--secondarycolor);
+        width: 90%;
+        padding-left: 2rem;
+      }
+      
+      .koncert-info h2 {
+        color: var(--secondarycolor);
+        font-size: 1.4rem;
+        text-align: center;
+ 
+      }
+      
+      .koncert-info p {
+        padding-top: 1rem;
+      }
+      
+      /* styling af knap til alle koncerter */
+      .koncert-button {
+        padding-top: 1.5rem;
+      }
+      
+      .koncert-button a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid var(--primarycolor);
+        width: 170px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+      
+      .koncert-button a:hover {
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+      }
+      
+      /* styling af billede til afsnittet */
+      .koncert-image {
+        width: 100%;
+      }
+      
+      .figure-container{
+        text-align: center;
+        display: flex;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+        padding-top: 1rem;
+      }
+
+      
+      .koncert-image img {
+        width: 75%;
+        height: auto;
+        padding-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .koncert-heading {
+        color: var(--secondarycolor);
+        font-size: 1rem;
+        text-align: center;
+
+      }
+
+      .koncert-image a{
+        text-decoration: none;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+      }
+
+      .figure-container,.koncert-heading:hover{
+        color: var(--secondarycolor);
+        -webkit-text-stroke:0.8px var(--secondarycolor) ;
+        -webkit-text-fill-color: var(--primarycolor);
+        cursor: pointer;
+      }
+
+      .koncert-image img:hover{
+        transform: scale(1.05);
+      }
+
+    /* Styling af kommende koncerter billeder */
+    .koncerter-img{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .k1-img, .k2-img, .k3-img{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+    .k1-img, .k2-img, .k3-img h3{
+        color: var(--secondarycolor);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        -webkit-text-stroke: 0;
+    }
+
+    .k1-overskrift{
+        text-align: center;
+    }
+    
+    .koncerter-img img{
+        width: 70%;
+        padding-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    /* hovereffekt til kunstner titler */
+    aside h3:hover{
+        color: var(--secondarycolor);
+        -webkit-text-stroke:0.8px var(--secondarycolor) ;
+        -webkit-text-fill-color: var(--primarycolor);
+        cursor: pointer;
+    }
+
+    .k1-img, .k2-img, .k3-img, a{
+        transition: transform 0.3s ease;
+    }
+
+    .k1-img, .k2-img, .k3-img, a:hover{
+        transform: scale(1.05);
+        
+    }
+
+    
+    /* Styling af kunstner spotlight afsnit */
+    .kunstner-spot img{
+        max-width: 75%;
+        max-height: 75%;
+       
+    }
+
+    .kunstner-img-container{
+        grid-column: 1;
+        grid-row: 3;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+
+    .kunstner-img-container h3{
+        font-family:var(--font-primary) ;
+        color: var(--secondarycolor);
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+
+
+    .kunstner-spot{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 15rem 3rem 17rem;
+        align-items: start;
+        padding: 2rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .kunstner-spot-tekst{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondarycolor);
+        padding: 1rem 0 1rem 1rem;
+        width: 100%;
+    }
+
+    .kunstner-spot h2{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        color: var(--secondarycolor);
+        padding-bottom: 1rem;
+    }
+
+   
+
+
+    /* Styling af knap */
+    .kunstner-knap a{
+        grid-row: 2;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 60%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .kunstner-knap a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+
+    }
+
+    .kunstner-knap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    /* Styling af Radar værdier afsnit */
+
+    .vaerdier-afsnit{
+        background-image: url(/images/forside-img2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        background-repeat: no-repeat;
+        border-bottom: 1.2px solid;
+        
+    }
+
+    .vaerdier-afsnit h2{
+        color: white;
+        font-weight: bold;
+        padding-top: 5rem;
+        padding-left: 1.5rem;
+    }
+
+    .vaerdier-tekst{
+        background-color: whitesmoke;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .vaerdier-artikel, .vaerdier-artikel2{
+        width: 80%;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* Styling af footer */
+    
+    footer{
+        background-color:var(--primarycolor);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        padding-top: 1rem;
+        color: var(--secondarycolor);
+    }
+    
+    /* Styling af ikoner */
+    .some-ikoner svg{
+        width: 80%;
+    }
+
+    .some-ikoner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styling af oplysninger i footeren */
+    .footer-oplysninger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .oplysninger{
+        list-style: none;
+        text-align: center;
+    }
+
+    .oplysninger li{
+        padding: 0.2rem;
+    }
+
+    /* Styling af nyhedsbrev */
+    .nyhedsbrev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .nyhedsbrev p{
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .nyhed-knap{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 170px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .kunstner-knap a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+
+    }
+
+
+
+    /* Styling af kontaktoplysninger */
+    .kontakt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .kontakt-tekst {
+        list-style: none;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .kontakt-tekst li{
+        padding: 0.2rem;
+    }
+
+
+}
+
+
+
+
