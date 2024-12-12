@@ -330,6 +330,7 @@
         outline-color: black;
         border-radius: 5px;
         transform: scale(1.05);
+        
     }
 
 
@@ -425,6 +426,21 @@
         padding: 2rem 0 4rem 6rem;
         display: flex;
         gap: 10rem ;
+
+        animation: scrolling linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 38%;
+    }
+
+    @keyframes scrolling{
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
     }
 
     /* Styling af tekst og artikel */
