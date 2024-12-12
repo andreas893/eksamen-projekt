@@ -209,9 +209,9 @@
     .baggrund-img{
         background-image: url(../images/koncert-img/koncert-img.jpg);
         background-size: cover;
-        background-position: 0 40%;
+        background-position: 0 27%;
         margin-top: rem;
-        height: 300px;
+        height: 22rem;
         width: 100%;
     }
 
