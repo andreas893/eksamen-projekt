@@ -21,6 +21,11 @@
         --font-primary:"utile", sans-serif;
     }
      
+    
+    html{
+        scroll-behavior: smooth;
+    }
+
     /* generel styling af header */
     header {
         position:fixed;
@@ -169,7 +174,7 @@
     main{
         padding-top: 7rem;
         line-height: 1.2;
-        background-color: var(--primarycolor);
+        background-color: whitesmoke;
     }
 
     h1{
@@ -184,6 +189,12 @@
         font-family: var(--font-primary);
         font-weight: bold;
         font-size: 1.6rem;
+    }
+
+    h3{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        
     }
 
     p{
@@ -209,16 +220,86 @@
     }
 
 
+    /* Styling af navigation til koncert oversigt */
+    .navigation{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        align-items: start;
+        justify-items: center;
+        padding-top: 4rem;
+    }
 
+    /* Styling af video */
+    .navigation video{
+        width: 80%;
+        padding-top: 1rem;
+    }
 
+    .video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-primary);
+    }
+    
+    .video figcaption{
+        padding-top: 1rem;
+    }
 
+    .video-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    /* Styling af knapper med månederne og knap sektionen*/
+    .navigation a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        color:var(--secondarycolor);
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        padding: 0.8rem 1rem;
+        width: 400px;
+        outline: 1.5px #181717 solid;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: 400ms;
+        background-color: var(--primarycolor);
+    }
 
+    .navigation a:hover{
+        background-color: transparent;
+        color: black;
+    }
 
+    .punkter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
+    /* Styling af koncertoversigt for december */
 
+    .dec-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
-
+    .dec-grid img{
+        width: 50%;
+    }
 
 
 
