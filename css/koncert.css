@@ -181,7 +181,8 @@
         color: white;
         font-family:var(--font-primary);
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        width: 50%;
         
     }
 
@@ -229,6 +230,7 @@
         align-items: start;
         justify-items: center;
         padding-top: 4rem;
+        padding: 4rem 2rem 0 2rem;
     }
 
     /* Styling af video */
@@ -294,13 +296,212 @@
     .dec-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        padding: 7rem 2rem 0 3rem;
+        gap: 2rem;
+    }
+
+    .dec-grid h2{
+        grid-column: 1/-1;
+        padding-bottom: 2rem;
     }
 
     .dec-grid img{
-        width: 50%;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.5);
     }
 
+    .dec-grid aside{
+        text-align: center;
+    }
+
+    .dec-grid aside h3{
+        padding-bottom: 0.5rem;
+    }
+
+
+    .dec-grid a{
+        transition: all 0.3s ease;
+    }
+
+    .dec-grid a :hover{
+        outline: 2px solid;
+        outline-color: black;
+        border-radius: 5px;
+        transform: scale(1.05);
+    }
+
+
+    /* Styling af koncertoversigt for januar */
+
+    /* laver 3 kolonner så billeder er samme størrelse som øvrige for december */
+    .jan-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 2rem;
+        padding: 3rem 2rem 0 3rem;
+    }
+
+    .jan-grid img{
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+
+    .jan-grid h2{
+        grid-column: 1/-1;
+        padding-bottom: 2rem;
+    }
+
+    .jan-grid aside{
+        text-align: center;
+    }
+
+    .jan-grid aside h3{
+        padding-bottom: 0.5rem;
+    }
+
+    
+    .jan-grid a{
+        transition: all 0.3s ease;
+    }
+
+    .jan-grid a :hover{
+        outline: 2px solid;
+        outline-color: black;
+        border-radius: 5px;
+        transform: scale(1.05);
+    }
+
+
+    /* Styling af februar afsnit */
+    .feb-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 2rem;
+        padding: 3rem 2rem 4rem 3rem;
+    }
+
+    .feb-grid img{
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+
+    .feb-grid h2{
+        grid-column: 1/-1;
+        padding-bottom: 2rem;
+    }
+
+    .feb-grid aside{
+        text-align: center;
+    }
+
+    .feb-grid aside h3{
+        padding-bottom: 0.5rem;
+    }
+
+    
+    .feb-grid a{
+        transition: all 0.3s ease;
+    }
+
+    .feb-grid a :hover{
+        outline: 2px solid;
+        outline-color: black;
+        border-radius: 5px;
+        transform: scale(1.05);
+    }
+
+    /* Styling af workshop afsnit */
+
+    .workshop{
+        background-color: var(--primarycolor);
+        color: var(--secondarycolor);
+        padding-top: 1.5rem;
+        padding: 2rem 0 4rem 6rem;
+        display: flex;
+        gap: 10rem ;
+    }
+
+    /* Styling af tekst og artikel */
+    .workshop p{
+        padding-top: 1.5rem;
+    }
+
+    .workshop article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    /* Styling af billede */
+    .workshop-img img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .workshop-img{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        padding-right: 3rem;
+    }
+
+    /* Styling af knap */
+    .workshop article a{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 90%;
+        text-align: center;
+        transition: all 0.3s ease;
+        margin-top: 2rem;
+    }
+
+    .workshop article a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+    }
+
+
+    /* Styling af konkurrence sektionen */
+    .konkurrence-afsnit{
+        background-image: url(../images/koncert-img/konkurrencer-img.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:30rem;
+        padding: 2rem 2rem 2rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        align-items: center;
+    }
+
+
+    .tekst1{
+        grid-column: 1;
+    }
+
+    .konkurrence-afsnit h2{
+        grid-column: 1/-1;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
 
 
 
