@@ -210,7 +210,7 @@
         background-image: url(../images/koncert-img/koncert-img.jpg);
         background-size: cover;
         background-position: 0 40%;
-        margin-top: 1rem;
+        margin-top: rem;
         height: 300px;
         width: 100%;
     }
@@ -484,17 +484,25 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height:30rem;
-        padding: 2rem 2rem 2rem 2rem;
+        height:25rem;
+        padding: 2rem 2rem 2rem 4rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr;
-        align-items: center;
+        grid-template-rows: auto auto;
+
     }
 
 
     .tekst1{
         grid-column: 1;
+        grid-row: 2; 
+        width: 90%;  
+    }
+
+    .tekst2{
+       grid-column: 2;
+       grid-row: 3;
+       width: 90%;
     }
 
     .konkurrence-afsnit h2{
