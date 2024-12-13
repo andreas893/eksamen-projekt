@@ -1079,6 +1079,20 @@
         padding: 2rem 0 2rem 4rem;
         display: flex;
         gap: 6rem ;
+        animation: scrolling linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 38%;
+    }
+
+    @keyframes scrolling{
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
     }
 
     /* Styling af tekst og artikel */
@@ -1331,8 +1345,11 @@
         font-weight: bold;
         border-bottom: 1.2px solid;
         max-height: 25%;
+       
     }
     
+    
+
     header label {
         display: block;
     }
@@ -1347,6 +1364,7 @@
         display: none;
         padding: 0.5rem 0 0.5rem 2rem;
     }
+
 
     header .navbar ul{
         list-style: none;
@@ -1731,6 +1749,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        animation: fadein linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 21%;
+    }
+
+    @keyframes fadein{
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
     }
 
     /* Styling af tekst og artikel */
@@ -2371,6 +2403,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        animation: scrolling linear;
+        animation-timeline: view();
+        animation-range:entry 0% cover 25%;
+    }
+
+    @keyframes scrolling{
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
     }
 
     /* Styling af tekst og artikel */
