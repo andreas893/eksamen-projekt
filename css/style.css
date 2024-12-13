@@ -833,8 +833,8 @@
     }    
 
     .intro-tekst p{
-        padding-top: 6rem;
         color: white;
+        padding-top: 2rem;
         width: 50%;
         border: black;
     }
@@ -1463,7 +1463,7 @@
     }    
 
     .intro-tekst p{
-        padding-top: 4rem;
+        padding-top: 2rem;
         color: white;
         width: 70%;
         border: black;

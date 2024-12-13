@@ -185,11 +185,23 @@
         font-size: 1.6rem;
     }
 
+    h3{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        font-size: 1.2;
+    }
+
     p{
         font-family: var(--font-primary);
         font-weight: lighter;
     }
     
+    a{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
 
     /* Styling af overskrift og billede */
     .baggrund-omos{
@@ -208,21 +220,108 @@
     .venue{
         padding-top: 5rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr auto;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .venue h2{
+        color: var(--secondarycolor);
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .venue-artikel{
+        width: 70%;
+        margin: 0 auto;
+        color: var(--secondarycolor);
     }
 
     .venue img{
-        width: 40%;
+        width: 100%;
+    }
+
+    /* styling af kultur artikel */
+    .kultur-sektion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+
+    .kultur-sektion h2{
+        text-align: center;
+        color: var(--secondarycolor);
+        padding-bottom: 2rem;
+    }
+
+    .kultur-sektion article{
+        width: 70%;
+        color: var(--secondarycolor);
     }
 
 
+    /* Styling af godsbane afsnit */
+    .godsbanen-afsnit{
+        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-position: center;
+        background-size: cover;
+        height: 33rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
 
+    }
 
+    .godsbanen-afsnit h2{
+        color: white;
+        padding-bottom: 1.5rem;
+    }
 
+    .gods-img img{
+        width: 85%;
+    }
 
+    .gods-img{
+        padding:4rem 0 0 2rem;
+    }
 
+    .gods-knap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 6rem;
+    }
 
+    .gods-knap a{
+        font-size: 1.5rem;
+    }
+    
+
+    .gods-knap a:hover{
+        -webkit-text-stroke:0.8px white ;
+        -webkit-text-fill-color:transparent;
+        cursor: pointer;
+    }
+
+    /* Styling af kulturelt centrum artikel */
+    .godsbanen-tekst{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 20rem 1fr;
+        grid-template-rows: 1fr;
+        padding: 3rem 4rem 3rem 5rem ;
+    }
+
+    .godsbanen-tekst article{
+        padding-top: 2rem;
+        padding-right: 3rem;
+    }
 
 
 /* Styling af footer */
@@ -322,5 +421,447 @@ footer{
     padding: 0.2rem;
 }
 
+}
 
+@media screen and (min-width:360px) and (max-width:500px) {
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    @font-face {
+        font-family: "utile", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        src: url(https://use.typekit.net/xik4fpi.css);
+    }
+    
+    
+    :root{
+        --primarycolor:#24547C;
+        --secondarycolor:#6FFF39;
+        --tetriarycolor:#F8E16C;
+        --font-primary:"utile", sans-serif;
+    }
+
+
+    /* Styling af navigationsbar/burgermenu */
+    .logo-img{
+        width: 35%;
+    }
+    
+    .forside-logo a{
+        display: flex;
+        justify-content: center;
+        padding-left: 1.1rem;
+    }
+
+    header {
+        margin: 0 auto;
+        position: fixed;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 1rem 5% 1rem 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        border-bottom: 1.2px solid;
+        height: 20%;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background:var(--primarycolor);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+
+    header .navbar ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 165px;
+    }
+
+    header .navbar li{
+        position: absolute;
+    }
+
+    header .navbar ul li {
+        width: 110%;
+        position: relative;
+    }
+
+    header .navbar ul li a{
+        color: var(--secondarycolor);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 10px;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        display: block;
+    }
+
+    header .navbar ul li ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        display: none;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    header .navbar ul li:focus-within > ul,
+    header .navbar ul li:hover > ul {
+    display: block;
+}
+    
+
+    /* Gør burgermenuen synlig når label/checkboxen er checked */
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+    #menu-bar{
+        display: none;
+    }
+
+    /* Styling af søgeknap */
+    .search-knap{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 5%;
+        max-width:1rem;
+    }
+    
+    /* Input er selve søgefeltet hvor man skriver det man søger på */
+    .input {
+        display: none;
+        width: 8rem;
+        height: 40px;
+        padding: 1rem; 
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: var(--primarycolor);
+        color:black;
+        transition: .3s ease;
+        position: absolute;
+        right: 100%;
+        
+
+    }
+       
+    /* Søge iconet */
+    .icon {
+        position: absolute;
+        left: 0rem;
+        fill: #9e9ea7;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .search-toggle{
+        display: none;
+    }
+    
+    .search-icon-label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        line-height: 28px;
+        max-width: 1rem;
+    }
+
+    .input::placeholder {
+        color: black;
+       }
+       
+    /* Hover effekt til søgefelt */
+    .input:focus, input:hover {
+        
+        border-color: black;
+        background-color:white;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    }
+
+    /* Gør input søgefeltet vises når label er checked eller ikonen klikkes på */
+    .search-toggle:checked ~ .input{
+        display: block;
+    }
+
+
+    main{
+        padding-top: 5rem;
+        line-height: 1.2;
+        background-color: var(--primarycolor);
+    }
+
+    h1{
+        color: white;
+        font-family:var(--font-primary);
+        font-weight: bold;
+        font-size: xx-large;
+        
+    }
+
+    h2{
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+
+    p{
+        font-family: var(--font-primary);
+        font-weight: lighter;
+    }
+
+
+    /* Styling af overskrift og billede */
+    .baggrund-omos{
+        background-image: url(../images/omos-radar/omos-img.jpg);
+        background-size: cover;
+        background-position: 0 15%;
+        height: 13rem;
+    }
+
+    .baggrund-omos h1{
+        padding: 4rem 0 0 2rem;
+    }
+
+    /* Styling af venue afsnit */
+
+    .venue{
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr auto;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .venue h2{
+        color: var(--secondarycolor);
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .venue-artikel{
+        width: 70%;
+        margin: 0 auto;
+        color: var(--secondarycolor);
+    }
+
+    .venue img{
+        width: 100%;
+    }
+
+    /* styling af kultur artikel */
+    .kultur-sektion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+
+    .kultur-sektion h2{
+        text-align: center;
+        color: var(--secondarycolor);
+        padding-bottom: 2rem;
+    }
+
+    .kultur-sektion article{
+        width: 70%;
+        color: var(--secondarycolor);
+    }
+
+
+    /* Styling af godsbane afsnit */
+    .godsbanen-afsnit{
+        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-position: center;
+        background-size: cover;
+        height: 33rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    .godsbanen-afsnit h2{
+        color: white;
+        padding-bottom: 1.5rem;
+    }
+
+    .gods-img img{
+        width: 85%;
+    }
+
+    .gods-img{
+        padding:4rem 0 0 2rem;
+    }
+
+    .gods-knap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 6rem;
+    }
+
+    .gods-knap a{
+        font-size: 1.5rem;
+    }
+    
+
+    .gods-knap a:hover{
+        -webkit-text-stroke:0.8px white ;
+        -webkit-text-fill-color:transparent;
+        cursor: pointer;
+    }
+
+    /* Styling af kulturelt centrum artikel */
+    .godsbanen-tekst{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 20rem 1fr;
+        grid-template-rows: 1fr;
+        padding: 3rem 4rem 3rem 5rem ;
+    }
+
+    .godsbanen-tekst article{
+        padding-top: 2rem;
+        padding-right: 3rem;
+    }
+
+
+
+
+
+
+    /* Styling af footer */
+    
+    footer{
+        background-color:var(--primarycolor);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        padding-top: 1rem;
+        color: var(--secondarycolor);
+    }
+    
+    /* Styling af ikoner */
+    .some-ikoner svg{
+        width: 80%;
+    }
+
+    .some-ikoner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styling af oplysninger i footeren */
+    .footer-oplysninger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .oplysninger{
+        list-style: none;
+        text-align: center;
+    }
+
+    .oplysninger li{
+        padding: 0.2rem;
+    }
+
+    /* Styling af nyhedsbrev */
+    .nyhedsbrev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .nyhedsbrev p{
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .nyhed-knap{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 170px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .nyhedsbrev a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+
+    }
+
+
+
+    /* Styling af kontaktoplysninger */
+    .kontakt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .kontakt-tekst {
+        list-style: none;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .kontakt-tekst li{
+        padding: 0.2rem;
+    }
+
+
+    
 }
