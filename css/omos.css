@@ -725,12 +725,11 @@ footer{
         background-image: url(../images/omos-radar/godsbanen-baggrund.png);
         background-position: center;
         background-size: cover;
-        height: 18rem;
-        max-height: 20rem;
+        height: 20rem;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 26rem auto;
         grid-template-rows: 1fr;
-
+        padding-right: 2rem;
     }
 
     .godsbanen-afsnit h2{
@@ -739,19 +738,25 @@ footer{
     }
 
     .gods-img img{
-        width: 80%;
+        width: 100%;
+        max-height: 200px;
+        max-width: 450px;
     }
 
     .gods-img{
-        padding:2rem 2rem 0 2rem;
+        padding:2rem 0 0 2rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
     }
 
     .gods-knap {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding-bottom: 4rem;
-        padding-right: 2rem;
+        align-items: center;
+        padding-bottom: 5rem;
+
     }
 
     .gods-knap a{
@@ -769,16 +774,21 @@ footer{
     .godsbanen-tekst{
         background-color: white;
         display: grid;
-        grid-template-columns: 1fr 15rem;
-        grid-template-rows: 1fr;
-        padding: 3rem 2rem 3rem 2rem ;
+        grid-template-columns: 15rem 20rem;
+        grid-template-rows: 20rem;
+        padding: 3rem 7rem 0 8rem ;
+        justify-content: center;
     }
 
     .godsbanen-tekst article{
         align-items: center;
         padding-left: 1rem;
+        width: 80%;
     }
 
+    .gods-overskrift{
+        text-align: center;
+    }
 
 
 
@@ -1210,7 +1220,7 @@ footer{
     }
 
     .gods-img{
-        padding:4rem 2rem 0 2rem;
+        padding:3rem 2rem 0 2rem;
         margin: 0 auto;
     }
 
