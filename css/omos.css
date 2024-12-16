@@ -221,12 +221,11 @@
     .venue{
         padding-top: 5rem;
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 25rem;
+        grid-template-rows: 1fr;
         padding-left: 4rem;
         padding-right: 4rem;
         align-items: center;
-        gap: 2rem;
     }
 
     .venue h2{
@@ -242,7 +241,7 @@
     }
 
     .venue img{
-        width: 100%;
+        width: 90%;
     }
 
     /* styling af kultur artikel */
