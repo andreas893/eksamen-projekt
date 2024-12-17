@@ -64,13 +64,17 @@
 
         <section class="content-afsnit">
             <aside class="oplevelse-knap">
-                <a href="#">Del din oplevelse</a>
+                <a href="#"><h2>Del din oplevelse</h2></a>
             </aside>
 
-            <aside>
+            <aside class="opslag-heading">
+                <h3>Seneste opslag</h3>
+            </aside>
+
+            <aside class="content-aside">
                 <figure class="profil">
                     <figcaption>Laura Skov</figcaption>
-                    <img src="../images/forum-img/account_circle_24dp_24547C_FILL0_wght400_GRAD0_opsz24.svg" alt="Profil ikon">
+                    <img src="../images/forum-img/account_circle_24dp_6FFF39_FILL0_wght400_GRAD0_opsz24.svg" alt="Profil ikon">
                 </figure>
 
                 <article class="oplevelse-tekst">
@@ -79,10 +83,10 @@
                 </article>
             </aside>
             
-            <aside>
+            <aside class="content-aside">
                 <figure class="profil">
                     <figcaption>Frederik Nielsen</figcaption>
-                    <img src="../images/forum-img/account_circle_24dp_24547C_FILL0_wght400_GRAD0_opsz24.svg" alt="Profil ikon">
+                    <img src="../images/forum-img/account_circle_24dp_6FFF39_FILL0_wght400_GRAD0_opsz24.svg" alt="Profil ikon">
                 </figure>
 
                 <article class="oplevelse-tekst">
@@ -93,11 +97,49 @@
             
         </section>
 
+
+        <section class="baggrund-billedegrid">
+               
+            <aside class="grid-header">
+                <h3>Billeder i har delt med os</h3>
+            </aside>
+            
+            <section class="billede-grid">
+                
+                <aside class="img-container"><img class="img1" src="../images/forum-img/img1.jpg" alt="Koncert på Radar"></aside>
+
+                <aside class="img-container">
+                    <img class="img2" src="../images/forum-img/img2.jpg" alt="Billede af fadølsanlæg">
+                </aside>
+
+                <aside class="img-container"><img class="img3" src="../images/forum-img/img3.jpg" alt="Billede af gammelt tv - Radar"></aside>
+
+                <aside class="video-container"><video controls autoplay muted loop src="../images/forum-img/video1.MOV">Video af Anastasia</video></aside>
+
+                <aside class="img-container"><img class="img4" src="../images/forum-img/img4.jpg" alt="Billede af baren på Radar"></aside>
+                <aside class="img-container"><img src="../images/forum-img/img5.jpg" alt="Billede af instrumentbord og koncert - Radar"></aside>
+            </section>
+        </section>
+        
         <section class="form">
+            <h3>Fortæl os alt om din oplevelse på Radar her:</h3>
+            
+            <aside class="form-container">
+                <form action="tak.html" method="get">
+                    <label for="emne">Emne:</label>
+                    <input placeholder="Giv dit opslag et emne..." type="text">
+                    <label for="tekst">Tekst:</label>
+                    <textarea name="tekst" id="message" placeholder="Skriv her... "></textarea>
+                    <button type="submit" value="submit">Post</button>
+                </form>
+              
+            </aside>
+            
+            <hr>
 
         </section>
 
-
+        
     </main>
 
 
