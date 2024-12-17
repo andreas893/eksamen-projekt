@@ -675,14 +675,11 @@ footer{
     /* Styling af venue afsnit */
 
     .venue{
-        padding-top: 3rem;
+        padding: 3rem 2rem 2rem 2rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr auto;
-        padding-left: 2rem;
-        padding-right: 2rem;
         align-items: center;
-        gap: 2rem;
     }
 
     .venue h2{
@@ -698,7 +695,12 @@ footer{
     }
 
     .venue img{
-        width: 100%;
+        width: 80%;
+        padding-left: 5rem;
+    }
+    
+    .img-container{
+        margin: 0 auto;
     }
 
     /* styling af kultur artikel */
