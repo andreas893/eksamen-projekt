@@ -214,7 +214,7 @@
 
     /* Styling af baggrund og overskrift */
     .baggrund-oplevelse{
-        background-image: url(../images/forum-img/forum-img.jpg);
+        background-image: url(../images/forum-img/forum-img.webp);
         background-position: 0 15%;
         background-size: cover;
         height: 20rem;
@@ -321,7 +321,7 @@
 
 
     .baggrund-billedegrid{
-        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-image: url(../images/omos-radar/godsbanen-baggrund.webp);
     }
 
     .billede-grid{
@@ -805,7 +805,7 @@
 
     /* Styling af baggrund og overskrift */
     .baggrund-oplevelse{
-        background-image: url(../images/forum-img/forum-img.jpg);
+        background-image: url(../images/forum-img/forum-img.webp);
         background-position: 0 15%;
         background-size: cover;
         height: 20rem;
@@ -912,7 +912,7 @@
 
 
     .baggrund-billedegrid{
-        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-image: url(../images/omos-radar/godsbanen-baggrund.webp);
     }
 
     .billede-grid{
@@ -1398,7 +1398,7 @@
 
     /* Styling af baggrund og overskrift */
     .baggrund-oplevelse{
-        background-image: url(../images/forum-img/forum-img.jpg);
+        background-image: url(../images/forum-img/forum-img.webp);
         background-position: 0 10%;
         background-size: cover;
         height: 16rem;
@@ -1516,7 +1516,7 @@
 
 
     .baggrund-billedegrid{
-        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-image: url(../images/omos-radar/godsbanen-baggrund.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -2016,7 +2016,7 @@
 
     /* Styling af baggrund og overskrift */
     .baggrund-oplevelse{
-        background-image: url(../images/forum-img/forum-img.jpg);
+        background-image: url(../images/forum-img/forum-img.webp);
         background-position: 0 10%;
         background-size: cover;
         height: 16rem;
@@ -2134,7 +2134,7 @@
 
 
     .baggrund-billedegrid{
-        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-image: url(../images/omos-radar/godsbanen-baggrund.webp);
     }
 
     .billede-grid{

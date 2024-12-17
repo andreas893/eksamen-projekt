@@ -207,7 +207,7 @@
 
     /* Styling af overskrift og billede */
     .baggrund-omos{
-        background-image: url(../images/omos-radar/omos-img.jpg);
+        background-image: url(../images/omos-radar/omos-img.webp);
         background-size: cover;
         background-position: 0 15%;
         height: 380px;
@@ -270,7 +270,7 @@
 
     /* Styling af godsbane afsnit */
     .godsbanen-afsnit{
-        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-image: url(../images/omos-radar/godsbanen-baggrund.webp);
         background-position: center;
         background-size: cover;
         height: 33rem;
@@ -663,7 +663,7 @@ footer{
 
     /* Styling af overskrift og billede */
     .baggrund-omos{
-        background-image: url(../images/omos-radar/omos-img.jpg);
+        background-image: url(../images/omos-radar/omos-img.webp);
         background-size: cover;
         background-position: 0 15%;
         height: 18rem;
@@ -727,7 +727,7 @@ footer{
 
     /* Styling af godsbane afsnit */
     .godsbanen-afsnit{
-        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-image: url(../images/omos-radar/godsbanen-baggrund.webp);
         background-position: center;
         background-size: cover;
         height: 27rem;
@@ -1127,7 +1127,7 @@ footer{
 
     /* Styling af overskrift og billede */
     .baggrund-omos{
-        background-image: url(../images/omos-radar/omos-img.jpg);
+        background-image: url(../images/omos-radar/omos-img.webp);
         background-size: cover;
         background-position: 0 18%;
         height: 13rem;
@@ -1196,7 +1196,7 @@ footer{
 
     /* Styling af godsbane afsnit */
     .godsbanen-afsnit{
-        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-image: url(../images/omos-radar/godsbanen-baggrund.webp);
         background-position: center;
         background-size: cover;
         height: 20rem;
@@ -1612,7 +1612,7 @@ footer{
 
     /* Styling af overskrift og billede */
     .baggrund-omos{
-        background-image: url(../images/omos-radar/omos-img.jpg);
+        background-image: url(../images/omos-radar/omos-img.webp);
         background-size: cover;
         background-position: 0 5%;
         height: 13rem;
@@ -1677,7 +1677,7 @@ footer{
 
     /* Styling af godsbane afsnit */
     .godsbanen-afsnit{
-        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-image: url(../images/omos-radar/godsbanen-baggrund.webp);
         background-position: center;
         background-size: cover;
         height: 19rem;

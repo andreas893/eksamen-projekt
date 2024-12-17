@@ -354,7 +354,7 @@
         text-decoration: none;
     }
 
-    .k2-img, .k3-img h3{
+    .k2-img h3, .k3-img h3{
         color: var(--secondarycolor);
         font-family: var(--font-primary);
         font-weight: bold;
@@ -992,7 +992,7 @@
     }
 
 
-    .k2-img, .k3-img h3{
+    .k2-img h3, .k3-img h3{
         color: var(--secondarycolor);
         font-family: var(--font-primary);
         font-weight: bold;
@@ -1627,7 +1627,7 @@
     }
 
 
-    .k1-img, .k2-img, .k3-img h3{
+    .k1-img h3, .k2-img h3, .k3-img h3{
         color: var(--secondarycolor);
         font-family: var(--font-primary);
         font-weight: bold;
@@ -2253,7 +2253,7 @@
     }
 
 
-    .k1-img, .k2-img, .k3-img h3{
+    .k1-img h3, .k2-img h3, .k3-img h3{
         color: var(--secondarycolor);
         font-family: var(--font-primary);
         font-weight: bold;

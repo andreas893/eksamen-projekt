@@ -209,7 +209,7 @@
     /* Styling af overskrift og baggrundsbillede */
 
     .baggrund-img{
-        background-image: url(../images/koncert-img/koncert-img.jpg);
+        background-image: url(../images/koncert-img/koncert-img.webp);
         background-size: cover;
         background-position: 0 27%;
         margin-top: rem;
@@ -498,7 +498,7 @@
 
     /* Styling af konkurrence sektionen */
     .konkurrence-afsnit{
-        background-image: url(../images/koncert-img/konkurrencer-img.png);
+        background-image: url(../images/koncert-img/konkurrencer-img.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -865,7 +865,7 @@
     /* Styling af overskrift og baggrundsbillede */
 
     .baggrund-img{
-        background-image: url(../images/koncert-img/koncert-img.jpg);
+        background-image: url(../images/koncert-img/koncert-img.webp);
         background-size: cover;
         background-position: 0 27%;
         margin-top: rem;
@@ -1156,7 +1156,7 @@
 
     /* Styling af konkurrence sektionen */
     .konkurrence-afsnit{
-        background-image: url(../images/koncert-img/konkurrencer-img.png);
+        background-image: url(../images/koncert-img/konkurrencer-img.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1533,7 +1533,7 @@
      /* Styling af overskrift og baggrundsbillede */
 
      .baggrund-img{
-        background-image: url(../images/koncert-img/koncert-img.jpg);
+        background-image: url(../images/koncert-img/koncert-img.webp);
         background-size: cover;
         background-position: 0 30% ;
         height: 16rem;
@@ -1826,7 +1826,7 @@
 
     /* Styling af konkurrence sektionen */
     .konkurrence-afsnit{
-        background-image: url(../images/koncert-img/konkurrencer-img.png);
+        background-image: url(../images/koncert-img/konkurrencer-img.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -2189,7 +2189,7 @@
      /* Styling af overskrift og baggrundsbillede */
 
      .baggrund-img{
-        background-image: url(../images/koncert-img/koncert-img.jpg);
+        background-image: url(../images/koncert-img/koncert-img.webp);
         background-size: cover;
         background-position: center ;
         height: 10rem;
@@ -2481,7 +2481,7 @@
 
     /* Styling af konkurrence sektionen */
     .konkurrence-afsnit{
-        background-image: url(../images/koncert-img/konkurrencer-img.png);
+        background-image: url(../images/koncert-img/konkurrencer-img.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
