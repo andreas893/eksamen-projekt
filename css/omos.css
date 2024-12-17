@@ -69,6 +69,8 @@
     background-color:var(--primarycolor);
     color: black;
     transition: .3s ease;
+    font-family: var(--font-primary);
+    font-weight: bold;
     }
 
     .input::placeholder {
@@ -577,7 +579,8 @@ footer{
         transition: .3s ease;
         position: absolute;
         right: 100%;
-        
+        font-family: var(--font-primary);
+        font-weight: bold;
 
     }
        
@@ -1040,7 +1043,8 @@ footer{
         transition: .3s ease;
         position: absolute;
         right: 100%;
-        
+        font-family: var(--font-primary);
+        font-weight: bold;
 
     }
        
@@ -1524,7 +1528,8 @@ footer{
         transition: .3s ease;
         position: absolute;
         right: 100%;
-        
+        font-family: var(--font-primary);
+        font-weight: bold;
 
     }
        

@@ -77,6 +77,8 @@
     background-color:var(--primarycolor);
     color: black;
     transition: .3s ease;
+    font-family: var(--font-primary);
+    font-weight: bold;
     }
 
     .input::placeholder {
@@ -617,7 +619,7 @@
 
 }
 
-@media screen and (min-width: 768px) and (max-width:1023px){
+@media screen and (min-width: 768px) and (max-width:1024px){
     *{
         margin: 0;
         box-sizing: border-box;
@@ -732,8 +734,10 @@
 
     /* Gør burgermenuen synlig når label/checkboxen er checked */
     #menu-bar:checked ~ .navbar {
-        display: block;
+        display:block;
     }
+
+
 
     #menu-bar{
         display: none;
@@ -761,8 +765,10 @@
         transition: .3s ease;
         position: absolute;
         right: 100%;
-        
-
+        font-family: var(--font-primary);
+        font-weight: bold;
+        font-family: var(--font-primary);
+        font-weight: bold;
     }
        
     /* Søge iconet */
@@ -1393,7 +1399,8 @@
         transition: .3s ease;
         position: absolute;
         right: 100%;
-        
+        font-family: var(--font-primary);
+        font-weight: bold;
 
     }
        
@@ -2017,7 +2024,8 @@
         transition: .3s ease;
         position: absolute;
         right: 100%;
-        
+        font-family: var(--font-primary);
+        font-weight: bold;
 
     }
        
