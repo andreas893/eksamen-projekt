@@ -547,13 +547,18 @@
     /* Styling af ikoner */
     .some-ikoner svg{
         width: 80%;
+        transition: ease 0.2s;
     }
-
+    
     .some-ikoner{
         display: flex;
         justify-content: center;
         align-items: center;
         grid-column: 2;
+    }
+    
+    .some-ikoner svg:hover{
+        transform: scale(1.1);
     }
 
     /* Styling af oplysninger i footeren */
