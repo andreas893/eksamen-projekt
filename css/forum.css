@@ -591,7 +591,7 @@
 
     /* Styling af navigationsbar/burgermenu */
     .logo-img{
-        width: 35%;
+        width: 25%;
     }
     
     .forside-logo a{
@@ -613,7 +613,7 @@
         font-family: var(--font-primary);
         font-weight: bold;
         border-bottom: 1.2px solid;
-        height: 20%;
+        height: 22%;
     }
 
     header label {
@@ -874,6 +874,7 @@
 
     .oplevelse-tekst h3{
         padding-bottom: 0.6rem;
+        text-align: center;
     }
 
     .content-aside:hover{
@@ -900,7 +901,7 @@
     }
 
     .profil img{
-        width: 50%;
+        width: 40%;
     
     }
 
@@ -914,12 +915,15 @@
 
     .baggrund-billedegrid{
         background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .billede-grid{
         padding: 0 2rem 2rem 2rem;
         display: grid;
-        grid-template-columns:  15rem;
+        grid-template-columns:  18rem;
         grid-template-rows: 1fr 1fr 1fr 15rem 1fr 1fr;
         gap: 1rem   ;
         margin: 0 auto;
@@ -1483,6 +1487,7 @@
 
     .oplevelse-tekst h3{
         padding-bottom: 0.6rem;
+        text-align: center;
     }
 
     .content-aside:hover{
@@ -1592,6 +1597,7 @@
         background-color: var(--primarycolor);
         padding-top: 3rem;
         padding-bottom: 2rem;
+        padding: 3rem 1rem 2rem 1rem;
     }
 
     .form h3{
