@@ -9,12 +9,10 @@
     }
 
     @font-face {
-        font-family: "utile", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        src: url(https://use.typekit.net/xik4fpi.css);
-    }
-
+        font-family:"utile";
+        src:url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
 
     :root{
         --primarycolor:#24547C;
@@ -423,7 +421,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
-        gap: 0 4rem 0 0;
+        gap:4rem;
         align-items: start;
         padding: 2.5rem;
     }
@@ -637,11 +635,10 @@
     }
 
     @font-face {
-        font-family: "utile", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        src: url(https://use.typekit.net/xik4fpi.css);
-    }
+        font-family:"utile";
+        src:url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
     
     
     :root{
@@ -874,7 +871,6 @@
         grid-gap: 1rem;
         align-items: center;
         overflow: hidden;
-        padding: ;
       }
       
       /* Styling af artikel */
@@ -1060,7 +1056,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
-        gap: 0 4rem 0 0;
+        gap:4rem;
         align-items: start;
         padding: 2.5rem;
     }
@@ -1279,11 +1275,10 @@
 
 
     @font-face {
-        font-family: "utile", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        src: url(https://use.typekit.net/xik4fpi.css);
-    }
+        font-family:"utile";
+        src:url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
     
     
     :root{
@@ -1906,11 +1901,10 @@
 
 
     @font-face {
-        font-family: "utile", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        src: url(https://use.typekit.net/xik4fpi.css);
-    }
+        font-family:"utile";
+        src:url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
     
     
     :root{

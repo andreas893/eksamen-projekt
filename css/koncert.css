@@ -7,11 +7,10 @@
     }
 
     @font-face {
-        font-family: "utile", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        src: url(https://use.typekit.net/xik4fpi.css);
-    }
+        font-family:"utile";
+        src:url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
 
 
     :root{
@@ -212,7 +211,6 @@
         background-image: url(../images/koncert-img/koncert-img.webp);
         background-size: cover;
         background-position: 0 27%;
-        margin-top: rem;
         height: 22rem;
         width: 100%;
     }
@@ -428,22 +426,8 @@
         padding: 2rem 0 4rem 6rem;
         display: flex;
         gap: 10rem ;
-
-        animation: scrolling linear;
-        animation-timeline: view();
-        animation-range:entry 0% cover 38%;
     }
 
-    @keyframes scrolling{
-        from{
-            opacity: 0;
-            scale: 0.5;
-        }
-        to {
-            opacity: 1;
-            scale: 1;
-        }
-    }
 
     /* Styling af tekst og artikel */
     .workshop p{
@@ -647,11 +631,10 @@
 
 
     @font-face {
-        font-family: "utile", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        src: url(https://use.typekit.net/xik4fpi.css);
-    }
+        font-family:"utile";
+        src:url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
     
     
     :root{
@@ -847,7 +830,7 @@
     h2{
         font-family: var(--font-primary);
         font-weight: bold;
-        font-size: 1.25;
+        font-size: 1.25rem;
     }
 
     h3{
@@ -868,7 +851,6 @@
         background-image: url(../images/koncert-img/koncert-img.webp);
         background-size: cover;
         background-position: 0 27%;
-        margin-top: rem;
         height: 18rem;
         width: 100%;
     }
@@ -1087,21 +1069,8 @@
         padding: 2rem 0 2rem 4rem;
         display: flex;
         gap: 6rem ;
-        animation: scrolling linear;
-        animation-timeline: view();
-        animation-range:entry 0% cover 38%;
     }
 
-    @keyframes scrolling{
-        from{
-            opacity: 0;
-            scale: 0.5;
-        }
-        to {
-            opacity: 1;
-            scale: 1;
-        }
-    }
 
     /* Styling af tekst og artikel */
     .workshop p{
@@ -1312,11 +1281,10 @@
 
 
     @font-face {
-        font-family: "utile", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        src: url(https://use.typekit.net/xik4fpi.css);
-    }
+        font-family:"utile";
+        src:url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
     
     
     :root{
@@ -1516,7 +1484,7 @@
     h2{
         font-family: var(--font-primary);
         font-weight: bold;
-        font-size: 1.25;
+        font-size: 1.25rem;
     }
 
     h3{
@@ -1757,21 +1725,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        animation: fadein linear;
-        animation-timeline: view();
-        animation-range:entry 0% cover 21%;
     }
 
-    @keyframes fadein{
-        from{
-            opacity: 0;
-            scale: 0.5;
-        }
-        to {
-            opacity: 1;
-            scale: 1;
-        }
-    }
+    
 
     /* Styling af tekst og artikel */
     .workshop p{
@@ -1973,11 +1929,10 @@
 
 
     @font-face {
-        font-family: "utile", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        src: url(https://use.typekit.net/xik4fpi.css);
-    }
+        font-family:"utile";
+        src:url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5c8d77/0000000000000000774cc122/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+        font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+        }
     
     
     :root{
@@ -2172,7 +2127,7 @@
     h2{
         font-family: var(--font-primary);
         font-weight: bold;
-        font-size: 1.25;
+        font-size: 1.25rem;
     }
 
     h3{
@@ -2412,21 +2367,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        animation: scrolling linear;
-        animation-timeline: view();
-        animation-range:entry 0% cover 25%;
     }
 
-    @keyframes scrolling{
-        from{
-            opacity: 0;
-            scale: 0.5;
-        }
-        to {
-            opacity: 1;
-            scale: 1;
-        }
-    }
 
     /* Styling af tekst og artikel */
     .workshop p{
