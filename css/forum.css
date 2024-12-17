@@ -15,6 +15,10 @@
     }
 
 
+    html{
+        scroll-behavior: smooth;
+    }
+
     :root{
         --primarycolor:#24547C;
         --secondarycolor:#6FFF39;
@@ -581,7 +585,10 @@
         src: url(https://use.typekit.net/xik4fpi.css);
     }
     
-    
+    html{
+        scroll-behavior: smooth;
+    }
+
     :root{
         --primarycolor:#24547C;
         --secondarycolor:#6FFF39;
@@ -1171,7 +1178,10 @@
         src: url(https://use.typekit.net/xik4fpi.css);
     }
     
-    
+    html{
+        scroll-behavior: smooth;
+    }
+
     :root{
         --primarycolor:#24547C;
         --secondarycolor:#6FFF39;
@@ -1786,6 +1796,10 @@
     }
     
     
+    html{
+        scroll-behavior: smooth;
+    }
+
     :root{
         --primarycolor:#24547C;
         --secondarycolor:#6FFF39;

@@ -168,7 +168,7 @@
 
     /* Generel styling af siden */
     main{
-        padding-top: 7rem;
+        padding-top: 6.5rem;
         line-height: 1.2;
         background-color: var(--primarycolor);
     }
@@ -459,7 +459,7 @@ footer{
     /* Styling af navigationsbar/burgermenu */
     .logo-img{
         width: 18%;
-        
+        max-height: 20%;
     }
     
     .forside-logo a{
@@ -481,7 +481,7 @@ footer{
         font-family: var(--font-primary);
         font-weight: bold;
         border-bottom: 1.2px solid;
-        height: 20%;
+        height: 25%;
     }
     
     header label {
@@ -625,7 +625,7 @@ footer{
 
 
     main{
-        padding-top: 7rem;
+        padding-top: 6rem;
         line-height: 1.2;
         background-color: var(--primarycolor);
     }

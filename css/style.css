@@ -176,7 +176,7 @@
 
     /* Generel styling af siden */
     main{
-        padding-top: 7rem;
+        padding-top: 6.5rem;
         line-height: 1.2;
         background-color: var(--primarycolor);
     }
@@ -350,6 +350,9 @@
         padding: 1rem;
     }
 
+    .k2-img, .k3-img a{
+        text-decoration: none;
+    }
 
     .k2-img, .k3-img h3{
         color: var(--secondarycolor);
@@ -376,9 +379,11 @@
 
     .k2-img, .k3-img, a{
         transition: transform 0.3s ease;
+        text-decoration: none;
+        color: var(--secondarycolor);
     }
 
-    .k2-img, .k3-img, a:hover{
+    .k2-img, .k3-img, img:hover{
         transform: scale(1.05);
         
     }
@@ -386,7 +391,7 @@
     /* Styling af kunstner spotlight afsnit */
     .kunstner-spot img{
         width: 80%;
-       
+        transition: transform 0.3s ease;
     }
 
     .kunstner-img-container{
@@ -397,6 +402,11 @@
         padding-top: 1.5rem;
         align-items: center;
         text-align: center;
+    }
+
+
+    .kunstner-img-container img:hover{
+        transform: scale(1.05);
     }
 
     .kunstner-img-container h3{
@@ -1007,9 +1017,11 @@
 
     .k2-img, .k3-img, a{
         transition: transform 0.3s ease;
+        text-decoration: none;
+        color: var(--secondarycolor);
     }
 
-    .k2-img, .k3-img, a:hover{
+    .k2-img, .k3-img, img:hover{
         transform: scale(1.05);
         
     }
@@ -1017,7 +1029,7 @@
     /* Styling af kunstner spotlight afsnit */
     .kunstner-spot img{
         width: 80%;
-       
+        transition: transform 0.3s ease;
     }
 
     .kunstner-img-container{
@@ -1028,6 +1040,10 @@
         padding-top: 1.5rem;
         align-items: center;
         text-align: center;
+    }
+
+    .kunstner-img-container img:hover{
+        transform: scale(1.05);
     }
 
     .kunstner-img-container h3{
@@ -1640,9 +1656,11 @@
 
     .k1-img, .k2-img, .k3-img, a{
         transition: transform 0.3s ease;
+        text-decoration: none;
+        color: var(--secondarycolor);
     }
 
-    .k1-img, .k2-img, .k3-img, a:hover{
+    .k1-img, .k2-img, .k3-img, img:hover{
         transform: scale(1.05);
         
     }
@@ -1652,6 +1670,7 @@
     .kunstner-spot img{
         height: 50%;
         width: 50%;
+        transition: transform 0.3s ease;
     }
 
     .kunstner-img-container{
@@ -2263,9 +2282,12 @@
 
     .k1-img, .k2-img, .k3-img, a{
         transition: transform 0.3s ease;
+        text-decoration: none;
+        color: var(--secondarycolor);
+        font-size: 1rem;
     }
 
-    .k1-img, .k2-img, .k3-img, a:hover{
+    .k1-img, .k2-img, .k3-img, img:hover{
         transform: scale(1.05);
         
     }
@@ -2275,7 +2297,7 @@
     .kunstner-spot img{
         max-width: 75%;
         max-height: 75%;
-       
+       transition: transform 0.3s ease;
     }
 
     .kunstner-img-container{
