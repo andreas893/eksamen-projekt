@@ -562,3 +562,1218 @@
         padding: 0.2rem;
     }
 }
+
+
+
+@media screen and (min-width:500px) and (max-width:768px) {
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    @font-face {
+        font-family: "utile", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        src: url(https://use.typekit.net/xik4fpi.css);
+    }
+    
+    
+    :root{
+        --primarycolor:#24547C;
+        --secondarycolor:#6FFF39;
+        --tetriarycolor:#F8E16C;
+        --font-primary:"utile", sans-serif;
+    }
+
+
+    /* Styling af navigationsbar/burgermenu */
+    .logo-img{
+        width: 35%;
+    }
+    
+    .forside-logo a{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    header {
+        margin: 0 auto;
+        position: fixed;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 1rem 5% 1rem 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        border-bottom: 1.2px solid;
+        height: 20%;
+    }
+
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background:var(--primarycolor);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+
+    header .navbar ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 165px;
+    }
+
+    header .navbar li{
+        position: absolute;
+    }
+
+    header .navbar ul li {
+        width: 110%;
+        position: relative;
+    }
+
+    header .navbar ul li a{
+        color: var(--secondarycolor);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 10px;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        display: block;
+    }
+
+    header .navbar ul li ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        display: none;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    header .navbar ul li:focus-within > ul,
+    header .navbar ul li:hover > ul {
+    display: block;
+    }
+
+
+    /* Gør burgermenuen synlig når label/checkboxen er checked */
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+    #menu-bar{
+        display: none;
+    }
+
+    /* Styling af søgeknap */
+    .search-knap{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 5%;
+        max-width:1rem;
+    }
+
+    /* Input er selve søgefeltet hvor man skriver det man søger på */
+    .input {
+        display: none;
+        width: 8rem;
+        height: 40px;
+        padding: 1rem; 
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: var(--primarycolor);
+        color:black;
+        transition: .3s ease;
+        position: absolute;
+        right: 100%;
+        
+
+    }
+    
+    /* Søge iconet */
+    .icon {
+        position: absolute;
+        left: 0rem;
+        fill: #9e9ea7;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .search-toggle{
+        display: none;
+    }
+
+    .search-icon-label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        line-height: 28px;
+        max-width: 1rem;
+    }
+
+    .input::placeholder {
+        color: black;
+    }
+    
+    /* Hover effekt til søgefelt */
+    .input:focus, input:hover {
+        
+        border-color: black;
+        background-color:white;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    }
+
+    /* Gør input søgefeltet vises når label er checked eller ikonen klikkes på */
+    .search-toggle:checked ~ .input{
+        display: block;
+    }
+
+
+
+    main{
+        padding-top: 5rem;
+        line-height: 1.2;
+        background-color: white;
+    }
+
+    h1{
+        color: white;
+        font-family:var(--font-primary);
+        font-weight: bold;
+        font-size: xx-large;
+        
+    }
+
+    h2{
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+
+    h3{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        font-size: 1.2;
+    }
+
+    p{
+        font-family: var(--font-primary);
+        font-weight: lighter;
+    }
+
+    a{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        text-decoration: none;
+    
+    }
+
+
+    /* Styling af baggrund og overskrift */
+    .baggrund-oplevelse{
+        background-image: url(../images/forum-img/forum-img.jpg);
+        background-position: 0 10%;
+        background-size: cover;
+        height: 16rem;
+    }
+
+    .baggrund-oplevelse h1{
+        padding: 5rem 1rem 0 1rem;
+    }
+
+
+    /* Styling af knap */
+    .oplevelse-knap a{
+        margin-bottom: 3rem;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: whitesmoke;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid var(--secondarycolor);
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+
+    }
+
+    .oplevelse-knap a:hover{
+        background-color: var(--primarycolor);
+            color: var(--tetriarycolor);
+            border-color: var(--tetriarycolor);
+    }
+
+
+    /* Styling af overskrift */
+    .opslag-heading{
+        color: var(--secondarycolor);
+        padding-bottom: 1rem;
+    }
+
+    /* Styling af placeholder opslag */
+    .content-afsnit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 3rem;
+        background-color: var(--primarycolor);
+        padding-bottom: 2rem;
+    }
+
+
+
+    .content-aside{
+        background-color:whitesmoke;
+        margin-bottom: 3rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:1rem;
+        border: var(--secondarycolor) 1.5px solid;
+        border-radius: 5px;
+        transition: ease 0.5s;
+        margin: 0 auto;
+    }
+
+    .aside1{
+        margin-bottom: 2rem;
+    }
+
+
+    .oplevelse-tekst h3{
+        padding-bottom: 0.6rem;
+    }
+
+    .content-aside:hover{
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+        transform: scale(1.1);
+        background-color: transparent;
+        color: var(--secondarycolor);
+    }
+
+
+    /* Styling af profil ikon og navn */
+    .profil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        padding-bottom: 1rem;
+        width: 50%;
+    }
+
+    .profil figcaption{
+        padding-bottom: 1rem;
+    }
+
+    .profil img{
+        width: 50%;
+    
+    }
+
+
+    /* Styling af billedegrid */
+    .grid-header{
+        padding: 2rem 0 2rem 2rem;
+        color: white;
+    }
+
+
+    .baggrund-billedegrid{
+        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+    }
+
+    .billede-grid{
+        padding: 0 2rem 2rem 2rem;
+        display: grid;
+        grid-template-columns:  15rem;
+        grid-template-rows: 1fr 1fr 1fr 15rem 1fr 1fr;
+        gap: 1rem   ;
+        margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .video-container video{
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: scrolling linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        animation: scrolling linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 35%;
+    }
+
+    @keyframes scrolling {
+        from{
+            opacity: 0;
+            transform: translateX(-150px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .img-container img{
+        width:90%;
+        height: 90%;
+        object-fit: contain;
+    }
+
+
+    /* Styling af form */
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primarycolor);
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .form h3{
+        color: var(--secondarycolor);
+        padding-bottom: 2rem;
+    }
+
+    .form-container form{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 28rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-container form, label, input, textarea{
+        background-color: whitesmoke;
+        padding: 2rem 2rem 2rem 1rem;
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+
+    /* styler tekstkasserne */
+    .form-container textarea, .form-container input{
+        border: 2px solid var(--secondarycolor);
+        border-radius: 5px;
+        resize: none;
+        width: 100%;
+    }
+
+    /* fjerner scrollbar */
+    textarea::-webkit-scrollbar{
+        display: none;
+    }
+
+    .form-container{
+        background-color: whitesmoke;
+        border-radius: 20px;
+    }
+
+    .form-container button{
+        align-self: flex-end;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: whitesmoke;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid var(--primarycolor);
+        width: 20%;
+        text-align: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .form-container button:hover{
+            background-color: var(--primarycolor);
+            color:var(--secondarycolor);
+    }
+
+
+    .form hr{
+        width: 60%;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        height: 0.15rem;
+        background-color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Styling af footer */
+    
+    footer{
+        background-color:var(--primarycolor);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        color: var(--secondarycolor);
+    }
+    
+    /* Styling af ikoner */
+    .some-ikoner svg{
+        width: 80%;
+    }
+
+    .some-ikoner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styling af oplysninger i footeren */
+    .footer-oplysninger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .oplysninger{
+        list-style: none;
+        text-align: center;
+    }
+
+    .oplysninger li{
+        padding: 0.2rem;
+    }
+
+    /* Styling af nyhedsbrev */
+    .nyhedsbrev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .nyhedsbrev p{
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .nyhed-knap{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 170px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .nyhedsbrev a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+
+    }
+
+
+
+    /* Styling af kontaktoplysninger */
+    .kontakt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .kontakt-tekst {
+        list-style: none;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .kontakt-tekst li{
+        padding: 0.2rem;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width:360px) and (max-width:500px) {
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    @font-face {
+        font-family: "utile", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        src: url(https://use.typekit.net/xik4fpi.css);
+    }
+    
+    
+    :root{
+        --primarycolor:#24547C;
+        --secondarycolor:#6FFF39;
+        --tetriarycolor:#F8E16C;
+        --font-primary:"utile", sans-serif;
+    }
+
+
+    /* Styling af navigationsbar/burgermenu */
+    .logo-img{
+        width: 35%;
+    }
+    
+    .forside-logo a{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    header {
+        margin: 0 auto;
+        position: fixed;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 1rem 5% 1rem 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        border-bottom: 1.2px solid;
+        height: 20%;
+    }
+
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        background:var(--primarycolor);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+
+    header .navbar ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 165px;
+    }
+
+    header .navbar li{
+        position: absolute;
+    }
+
+    header .navbar ul li {
+        width: 110%;
+        position: relative;
+    }
+
+    header .navbar ul li a{
+        color: var(--secondarycolor);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 10px;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        display: block;
+    }
+
+    header .navbar ul li ul {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        display: none;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    header .navbar ul li:focus-within > ul,
+    header .navbar ul li:hover > ul {
+    display: block;
+    }
+
+
+    /* Gør burgermenuen synlig når label/checkboxen er checked */
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+    #menu-bar{
+        display: none;
+    }
+
+    /* Styling af søgeknap */
+    .search-knap{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 5%;
+        max-width:1rem;
+    }
+
+    /* Input er selve søgefeltet hvor man skriver det man søger på */
+    .input {
+        display: none;
+        width: 8rem;
+        height: 40px;
+        padding: 1rem; 
+        border: 2px solid transparent;
+        border-radius: 8px;
+        background-color: var(--primarycolor);
+        color:black;
+        transition: .3s ease;
+        position: absolute;
+        right: 100%;
+        
+
+    }
+    
+    /* Søge iconet */
+    .icon {
+        position: absolute;
+        left: 0rem;
+        fill: #9e9ea7;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .search-toggle{
+        display: none;
+    }
+
+    .search-icon-label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        line-height: 28px;
+        max-width: 1rem;
+    }
+
+    .input::placeholder {
+        color: black;
+    }
+    
+    /* Hover effekt til søgefelt */
+    .input:focus, input:hover {
+        
+        border-color: black;
+        background-color:white;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    }
+
+    /* Gør input søgefeltet vises når label er checked eller ikonen klikkes på */
+    .search-toggle:checked ~ .input{
+        display: block;
+    }
+
+
+
+    main{
+        padding-top: 5rem;
+        line-height: 1.2;
+        background-color: white;
+    }
+
+    h1{
+        color: white;
+        font-family:var(--font-primary);
+        font-weight: bold;
+        font-size: xx-large;
+        
+    }
+
+    h2{
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+
+    h3{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        font-size: 1.2;
+    }
+
+    p{
+        font-family: var(--font-primary);
+        font-weight: lighter;
+    }
+
+    a{
+        font-family: var(--font-primary);
+        font-weight: bold;
+        text-decoration: none;
+    
+    }
+
+
+    /* Styling af baggrund og overskrift */
+    .baggrund-oplevelse{
+        background-image: url(../images/forum-img/forum-img.jpg);
+        background-position: 0 10%;
+        background-size: cover;
+        height: 16rem;
+    }
+
+    .baggrund-oplevelse h1{
+        padding: 5rem 1rem 0 1rem;
+    }
+
+
+    /* Styling af knap */
+    .oplevelse-knap a{
+        margin-bottom: 3rem;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: whitesmoke;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid var(--secondarycolor);
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+
+    }
+
+    .oplevelse-knap a:hover{
+        background-color: var(--primarycolor);
+            color: var(--tetriarycolor);
+            border-color: var(--tetriarycolor);
+    }
+
+
+    /* Styling af overskrift */
+    .opslag-heading{
+        color: var(--secondarycolor);
+        padding-bottom: 1rem;
+    }
+
+    /* Styling af placeholder opslag */
+    .content-afsnit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 3rem;
+        background-color: var(--primarycolor);
+        padding-bottom: 2rem;
+    }
+
+
+
+    .content-aside{
+        background-color:whitesmoke;
+        margin-bottom: 3rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:1rem;
+        border: var(--secondarycolor) 1.5px solid;
+        border-radius: 5px;
+        transition: ease 0.5s;
+        margin: 0 auto;
+    }
+
+    .aside1{
+        margin-bottom: 2rem;
+    }
+
+
+    .oplevelse-tekst h3{
+        padding-bottom: 0.6rem;
+    }
+
+    .content-aside:hover{
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+        transform: scale(1.1);
+        background-color: transparent;
+        color: var(--secondarycolor);
+    }
+
+
+    /* Styling af profil ikon og navn */
+    .profil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        padding-bottom: 1rem;
+        width: 50%;
+    }
+
+    .profil figcaption{
+        padding-bottom: 1rem;
+    }
+
+    .profil img{
+        width: 50%;
+    
+    }
+
+
+    /* Styling af billedegrid */
+    .grid-header{
+        padding: 2rem 0 2rem 2rem;
+        color: white;
+    }
+
+
+    .baggrund-billedegrid{
+        background-image: url(../images/omos-radar/godsbanen-baggrund.png);
+    }
+
+    .billede-grid{
+        padding: 0 2rem 2rem 2rem;
+        display: grid;
+        grid-template-columns:  15rem;
+        grid-template-rows: 1fr 1fr 1fr 15rem 1fr 1fr;
+        gap: 1rem   ;
+        margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .video-container video{
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: scrolling linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        animation: scrolling linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 35%;
+    }
+
+    @keyframes scrolling {
+        from{
+            opacity: 0;
+            transform: translateX(-150px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .img-container img{
+        width:90%;
+        height: 90%;
+        object-fit: contain;
+    }
+
+
+    /* Styling af form */
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primarycolor);
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .form h3{
+        color: var(--secondarycolor);
+        padding-bottom: 2rem;
+    }
+
+    .form-container form{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 28rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-container form, label, input, textarea{
+        background-color: whitesmoke;
+        padding: 2rem 2rem 2rem 1rem;
+        font-family: var(--font-primary);
+        font-weight: bold;
+    }
+
+    /* styler tekstkasserne */
+    .form-container textarea, .form-container input{
+        border: 2px solid var(--secondarycolor);
+        border-radius: 5px;
+        resize: none;
+        width: 100%;
+    }
+
+    /* fjerner scrollbar */
+    textarea::-webkit-scrollbar{
+        display: none;
+    }
+
+    .form-container{
+        background-color: whitesmoke;
+        border-radius: 20px;
+    }
+
+    .form-container button{
+        align-self: flex-end;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: whitesmoke;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid var(--primarycolor);
+        width: 20%;
+        text-align: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .form-container button:hover{
+            background-color: var(--primarycolor);
+            color:var(--secondarycolor);
+    }
+
+
+    .form hr{
+        width: 60%;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        height: 0.15rem;
+        background-color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Styling af footer */
+    
+    footer{
+        background-color:var(--primarycolor);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        color: var(--secondarycolor);
+    }
+    
+    /* Styling af ikoner */
+    .some-ikoner svg{
+        width: 80%;
+    }
+
+    .some-ikoner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styling af oplysninger i footeren */
+    .footer-oplysninger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .oplysninger{
+        list-style: none;
+        text-align: center;
+    }
+
+    .oplysninger li{
+        padding: 0.2rem;
+    }
+
+    /* Styling af nyhedsbrev */
+    .nyhedsbrev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .nyhedsbrev p{
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+    }
+
+    .nyhed-knap{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-family: var(--font-primary);
+        font-weight: bold;
+        background-color: var(--tetriarycolor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid;
+        border-color: var(--primarycolor);
+        width: 170px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .nyhedsbrev a:hover{
+        background-color: var(--primarycolor);
+        color: var(--tetriarycolor);
+        border-color: var(--tetriarycolor);
+
+    }
+
+
+
+    /* Styling af kontaktoplysninger */
+    .kontakt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .kontakt-tekst {
+        list-style: none;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .kontakt-tekst li{
+        padding: 0.2rem;
+    }
+
+
+}
