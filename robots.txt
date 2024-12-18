@@ -1,0 +1,3 @@
+user-agent:*
+disallow: /
+sitemap:https://eksamens-projekt-radar.sakuga.dk/sitemap.xml
